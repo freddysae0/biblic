@@ -1,0 +1,273 @@
+{
+  "id": "noah",
+  "title": "Noah's Ark",
+  "shortDescription": "The story of a righteous man who built an ark to save animals from a global flood.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In a time when wickedness filled the earth, Noah stood out as a righteous man who walked faithfully with God. The Lord saw how corrupt the world had become, and decided to cleanse it with a great flood.",
+      "asciiArt": "noah_intro",
+      "soundEffect": "thunder",
+      "next": "god_speaks"
+    },
+    {
+      "id": "god_speaks",
+      "text": "God spoke to Noah: 'I am going to put an end to all people, for the earth is filled with violence. So make yourself an ark of cypress wood; make rooms in it and coat it with pitch inside and out.'",
+      "asciiArt": "god_speaks",
+      "next": "decision_build"
+    },
+    {
+      "id": "decision_build",
+      "text": "God has commanded you to build an ark. What will you do?",
+      "choices": [
+        {
+          "text": "Begin building immediately, trusting God's command",
+          "next": "building_ark",
+          "effect": {"faith": 10}
+        },
+        {
+          "text": "Question why such a large boat is necessary",
+          "next": "questioning",
+          "effect": {"faith": -5}
+        },
+        {
+          "text": "Ask for more details about the construction",
+          "next": "ark_details",
+          "effect": {"knowledge": 5}
+        }
+      ]
+    },
+    {
+      "id": "questioning",
+      "text": "You hesitate, wondering why such a massive undertaking is necessary. God explains that a flood will cover the earth, destroying all life. Your questioning has delayed the work, but increased your understanding.",
+      "next": "ark_details"
+    },
+    {
+      "id": "ark_details",
+      "text": "God provides detailed instructions: 'The ark is to be three hundred cubits long, fifty cubits wide and thirty cubits high. Make a roof for it, leaving below the roof an opening one cubit high all around.'",
+      "asciiArt": "ark_blueprint",
+      "next": "building_ark"
+    },
+    {
+      "id": "building_ark",
+      "text": "For years, you work tirelessly on the ark. People mock you for building a massive boat on dry land, but you persevere. Finally, the ark is complete.",
+      "asciiArt": "building_ark",
+      "soundEffect": "construction",
+      "next": "animals_arrive"
+    },
+    {
+      "id": "animals_arrive",
+      "text": "As God promised, animals begin to arrive in pairs—male and female of every kind. Soon, the ark is filled with creatures of all types.",
+      "asciiArt": "animals_entering",
+      "soundEffect": "animal_sounds",
+      "next": "decision_departure"
+    },
+    {
+      "id": "decision_departure",
+      "text": "With the animals loaded, what will you do next?",
+      "choices": [
+        {
+          "text": "Enter the ark with your family immediately",
+          "next": "enter_ark",
+          "effect": {"obedience": 10}
+        },
+        {
+          "text": "Try to convince more people to join you",
+          "next": "convince_others",
+          "effect": {"compassion": 5, "obedience": -5}
+        },
+        {
+          "text": "Double-check your supplies and preparations",
+          "next": "check_supplies",
+          "effect": {"wisdom": 5}
+        }
+      ]
+    },
+    {
+      "id": "convince_others",
+      "text": "You make one final plea to your neighbors, but they laugh and refuse to believe. With a heavy heart, you return to the ark.",
+      "next": "enter_ark"
+    },
+    {
+      "id": "check_supplies",
+      "text": "You wisely check your supplies, ensuring you have enough food for all the animals and your family for the long journey ahead.",
+      "next": "enter_ark"
+    },
+    {
+      "id": "enter_ark",
+      "text": "You and your family—your wife, your three sons and their wives—enter the ark. God Himself closes the door behind you.",
+      "asciiArt": "ark_door_closing",
+      "soundEffect": "door_closing",
+      "next": "flood_begins"
+    },
+    {
+      "id": "flood_begins",
+      "text": "After seven days, the floodwaters come. Rain falls for forty days and forty nights. The waters rise and lift the ark high above the earth.",
+      "asciiArt": "flood_rising",
+      "soundEffect": "heavy_rain",
+      "next": "flood_peaks"
+    },
+    {
+      "id": "flood_peaks",
+      "text": "The waters flood the earth for a hundred and fifty days, covering even the highest mountains. Every living thing on the face of the earth is wiped out—except for those in the ark.",
+      "asciiArt": "flooded_earth",
+      "next": "waters_recede"
+    },
+    {
+      "id": "waters_recede",
+      "text": "Eventually, God sends a wind over the earth, and the waters recede. The ark comes to rest on the mountains of Ararat.",
+      "asciiArt": "ark_mountains",
+      "next": "decision_exploration"
+    },
+    {
+      "id": "decision_exploration",
+      "text": "After many days, the ark rests on the mountains. What will you do to check if the earth is dry?",
+      "choices": [
+        {
+          "text": "Send out a raven to see if it returns",
+          "next": "send_raven",
+          "effect": {"wisdom": 5}
+        },
+        {
+          "text": "Send out a dove to look for dry land",
+          "next": "send_dove",
+          "effect": {"wisdom": 10}
+        },
+        {
+          "text": "Open the ark's window to look outside",
+          "next": "open_window",
+          "effect": {"curiosity": 5}
+        }
+      ]
+    },
+    {
+      "id": "send_raven",
+      "text": "You send out a raven, which flies back and forth until the waters have dried up from the earth. This gives you some information, but you need more certainty.",
+      "next": "send_dove"
+    },
+    {
+      "id": "open_window",
+      "text": "You open the window and see mountains around you, but much of the land is still covered with water. You need a better way to check.",
+      "next": "send_dove"
+    },
+    {
+      "id": "send_dove",
+      "text": "You send out a dove, but it returns finding nowhere to perch. A week later, you send it again, and it returns with a freshly plucked olive leaf. When you send it a third time, it doesn't return—a sign that it's found dry land.",
+      "asciiArt": "dove_olive",
+      "next": "leave_ark"
+    },
+    {
+      "id": "leave_ark",
+      "text": "God commands you: 'Come out of the ark, you and your wife and your sons and their wives. Bring out every kind of living creature that is with you so they can multiply on the earth.'",
+      "next": "new_beginning"
+    },
+    {
+      "id": "new_beginning",
+      "text": "You build an altar to the Lord and sacrifice burnt offerings. God places a rainbow in the sky as a sign of His covenant never to flood the entire earth again. This marks a new beginning for humanity.",
+      "asciiArt": "rainbow_covenant",
+      "soundEffect": "peaceful_ambient",
+      "next": "conclusion"
+    },
+    {
+      "id": "conclusion",
+      "text": "Noah lived for 350 years after the flood. Through his sons—Shem, Ham, and Japheth—the earth was repopulated, and humanity was given a second chance.",
+      "asciiArt": "noah_family",
+      "next": "end"
+    }
+  ],
+  "teaching": {
+    "mainLesson": "Faith and obedience to God, even when it seems difficult or doesn't make sense to others.",
+    "secondaryLessons": [
+      "God's judgment against sin is real, but so is His mercy toward the righteous.",
+      "God keeps His promises and establishes covenants with His people.",
+      "Sometimes following God means standing alone against the crowd.",
+      "God provides a way of salvation for those who trust Him."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "Genesis 6:9",
+        "text": "Noah was a righteous man, blameless among the people of his time, and he walked faithfully with God."
+      },
+      {
+        "reference": "Genesis 6:22",
+        "text": "Noah did everything just as God commanded him."
+      },
+      {
+        "reference": "Hebrews 11:7",
+        "text": "By faith Noah, when warned about things not yet seen, in holy fear built an ark to save his family. By his faith he condemned the world and became heir of the righteousness that is in keeping with faith."
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "question": "How many people were saved in the ark?",
+      "options": [
+        "4",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eight people were saved: Noah, his wife, his three sons (Shem, Ham, and Japheth), and their wives."
+    },
+    {
+      "question": "How long did it rain during the flood?",
+      "options": [
+        "7 days",
+        "30 days",
+        "40 days",
+        "150 days"
+      ],
+      "correctAnswer": 2,
+      "explanation": "It rained for 40 days and 40 nights, but the flood waters remained for 150 days."
+    },
+    {
+      "question": "What sign did God give as a promise never to flood the entire earth again?",
+      "options": [
+        "A dove",
+        "A rainbow",
+        "An olive branch",
+        "A burning bush"
+      ],
+      "correctAnswer": 1,
+      "explanation": "God placed a rainbow in the sky as a sign of His covenant never to flood the entire earth again."
+    },
+    {
+      "question": "What was the first bird that Noah sent out from the ark?",
+      "options": [
+        "A dove",
+        "A raven",
+        "An eagle",
+        "A sparrow"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Noah first sent out a raven, which kept flying back and forth until the waters dried up."
+    },
+    {
+      "question": "What mountain range did the ark come to rest on?",
+      "options": [
+        "Mount Sinai",
+        "Mount Zion",
+        "Mountains of Ararat",
+        "Mount Nebo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ark came to rest on the mountains of Ararat."
+    }
+  ],
+  "asciiArtReferences": {
+    "noah_intro": "ascii_noah_intro.txt",
+    "god_speaks": "ascii_god_speaks.txt",
+    "ark_blueprint": "ascii_ark_blueprint.txt",
+    "building_ark": "ascii_building_ark.txt",
+    "animals_entering": "ascii_animals_entering.txt",
+    "ark_door_closing": "ascii_ark_door_closing.txt",
+    "flood_rising": "ascii_flood_rising.txt",
+    "flooded_earth": "ascii_flooded_earth.txt",
+    "ark_mountains": "ascii_ark_mountains.txt",
+    "dove_olive": "ascii_dove_olive.txt",
+    "rainbow_covenant": "ascii_rainbow_covenant.txt",
+    "noah_family": "ascii_noah_family.txt"
+  }
+}
+

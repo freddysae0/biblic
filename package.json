@@ -1,0 +1,42 @@
+{
+  "name": "biblic",
+  "version": "1.0.1",
+  "description": "An interactive biblical text adventure game with moral teachings and challenges",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "biblic": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "postinstall": "node -e \"console.log('\\nThank you for installing Biblic Game! Run \\'biblic\\' to start playing.')\"",
+    "prepare": "chmod +x src/index.js",
+    "link": "npm link --global",
+    "unlink": "npm unlink --global",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bible",
+    "game",
+    "text-adventure",
+    "interactive",
+    "christian",
+    "cli",
+    "educational",
+    "biblical",
+    "stories",
+    "terminal"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "figlet": "^1.8.1",
+    "inquirer": "^12.5.2",
+    "node-persist": "^4.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

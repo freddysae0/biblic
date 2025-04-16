@@ -1,0 +1,388 @@
+{
+  "id": "david-goliath",
+  "title": "David and Goliath",
+  "shortDescription": "The story of a young shepherd who defeated a mighty giant with faith and courage.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In the time of King Saul, Israel faced a great threat from the Philistines. The armies were positioned on opposite sides of the Valley of Elah. Each day, a Philistine champion named Goliath came forward to challenge the Israelites to single combat.",
+      "asciiArt": "armies_facing",
+      "soundEffect": "battle_horns",
+      "next": "goliath_appears"
+    },
+    {
+      "id": "goliath_appears",
+      "text": "Goliath was an imposing figure, over nine feet tall, wearing a bronze helmet and a coat of scale armor weighing 125 pounds. He carried a javelin, a spear with a 15-pound iron point, and had a shield-bearer who went before him. Each day, he taunted and terrified the Israelites.",
+      "asciiArt": "goliath_appears",
+      "next": "david_arrives"
+    },
+    {
+      "id": "david_arrives",
+      "text": "Meanwhile, a young shepherd named David was sent by his father Jesse to bring food to his three older brothers who were serving in Saul's army. When David arrived at the camp, he heard Goliath's challenge and the fearful murmurs of the Israelite soldiers.",
+      "asciiArt": "david_arrives",
+      "next": "decision_first_reaction"
+    },
+    {
+      "id": "decision_first_reaction",
+      "text": "Upon hearing Goliath's taunts and seeing the fear in the Israelite army, what is your reaction as David?",
+      "choices": [
+        {
+          "text": "Feel indignant that someone would defy the armies of the living God",
+          "next": "ask_about_reward",
+          "effect": {"faith": 10, "courage": 5}
+        },
+        {
+          "text": "Ask your brothers about the situation to gather more information",
+          "next": "brothers_explanation",
+          "effect": {"wisdom": 5, "knowledge": 5}
+        },
+        {
+          "text": "Feel afraid like the other soldiers, but stay to observe",
+          "next": "observe_goliath",
+          "effect": {"wisdom": 5, "courage": -5}
+        }
+      ]
+    },
+    {
+      "id": "brothers_explanation",
+      "text": "Your brothers explain that Goliath has been challenging Israel for forty days, and no one has dared to fight him. King Saul has offered great wealth, his daughter in marriage, and tax exemption for the family of anyone who defeats the giant.",
+      "next": "ask_about_reward"
+    },
+    {
+      "id": "observe_goliath",
+      "text": "You watch as Goliath emerges again, his massive frame casting a long shadow across the valley. His booming voice echoes as he mocks the Israelite army and their God. Despite your initial fear, something stirs within you.",
+      "next": "ask_about_reward"
+    },
+    {
+      "id": "ask_about_reward",
+      "text": "You ask nearby soldiers, \"What will be done for the man who kills this Philistine and removes this disgrace from Israel? Who is this uncircumcised Philistine that he should defy the armies of the living God?\" Your oldest brother Eliab hears you speaking and becomes angry.",
+      "next": "decision_brother_confrontation"
+    },
+    {
+      "id": "decision_brother_confrontation",
+      "text": "Your brother Eliab confronts you: \"Why have you come down here? And with whom did you leave those few sheep in the wilderness? I know how conceited you are and how wicked your heart is; you came down only to watch the battle.\" How do you respond?",
+      "choices": [
+        {
+          "text": "Stand your ground: \"Now what have I done? Can't I even speak?\"",
+          "next": "stand_ground",
+          "effect": {"courage": 5, "obedience": -5}
+        },
+        {
+          "text": "Apologize and step back to avoid conflict with your brother",
+          "next": "apologize_brother",
+          "effect": {"humility": 10, "courage": -5}
+        },
+        {
+          "text": "Ignore him and continue asking others about Goliath",
+          "next": "ignore_brother",
+          "effect": {"determination": 10, "obedience": -5}
+        }
+      ]
+    },
+    {
+      "id": "stand_ground",
+      "text": "You stand your ground against your brother's accusations. Your words are overheard by some soldiers who report them to King Saul. Soon, you are summoned to appear before the king.",
+      "next": "before_saul"
+    },
+    {
+      "id": "apologize_brother",
+      "text": "You apologize to your brother, but your questions about Goliath have already spread through the camp. Soon, you are summoned to appear before King Saul.",
+      "next": "before_saul"
+    },
+    {
+      "id": "ignore_brother",
+      "text": "You ignore your brother's anger and continue speaking about Goliath. Your determination impresses those around you, and soon, you are summoned to appear before King Saul.",
+      "next": "before_saul"
+    },
+    {
+      "id": "before_saul",
+      "text": "You stand before King Saul, who looks at you with skepticism. \"You are just a boy,\" he says, \"and Goliath has been a warrior since his youth.\" But you are determined to face the giant.",
+      "asciiArt": "before_king",
+      "next": "decision_convince_saul"
+    },
+    {
+      "id": "decision_convince_saul",
+      "text": "King Saul doubts your ability to face Goliath. How do you convince him to let you fight?",
+      "choices": [
+        {
+          "text": "Share your experience protecting sheep from lions and bears",
+          "next": "lion_bear_story",
+          "effect": {"wisdom": 5, "faith": 5}
+        },
+        {
+          "text": "Express your faith that God will deliver Goliath into your hands",
+          "next": "faith_expression",
+          "effect": {"faith": 10}
+        },
+        {
+          "text": "Offer to prove your skill with a demonstration",
+          "next": "skill_demonstration",
+          "effect": {"courage": 5, "determination": 5}
+        }
+      ]
+    },
+    {
+      "id": "lion_bear_story",
+      "text": "\"Your Majesty, I have been a shepherd for my father. When a lion or bear came and carried off a sheep, I went after it, struck it, and rescued the sheep. This Philistine will be like one of them, for he has defied the armies of the living God. The Lord who rescued me from the paw of the lion and bear will rescue me from the hand of this Philistine.\"",
+      "next": "saul_convinced"
+    },
+    {
+      "id": "faith_expression",
+      "text": "\"The Lord who delivered me from the paw of the lion and from the paw of the bear will deliver me from the hand of this Philistine.\" Your unwavering faith impresses Saul, despite your youth.",
+      "next": "saul_convinced"
+    },
+    {
+      "id": "skill_demonstration",
+      "text": "You demonstrate your skill with a sling, hitting targets with remarkable accuracy. While Saul remains doubtful, he begins to see that you have unusual abilities for someone so young.",
+      "next": "saul_convinced"
+    },
+    {
+      "id": "saul_convinced",
+      "text": "King Saul is moved by your courage and faith. \"Go, and the Lord be with you,\" he says. He attempts to outfit you with his own armor—a bronze helmet, a coat of mail, and his sword.",
+      "next": "decision_armor"
+    },
+    {
+      "id": "decision_armor",
+      "text": "Saul offers you his armor to wear in battle. What do you do?",
+      "choices": [
+        {
+          "text": "Accept the king's armor out of respect",
+          "next": "try_armor",
+          "effect": {"obedience": 5, "wisdom": -5}
+        },
+        {
+          "text": "Politely decline, explaining you haven't tested it",
+          "next": "refuse_armor",
+          "effect": {"wisdom": 10, "faith": 5}
+        },
+        {
+          "text": "Try it on first to see if it fits",
+          "next": "try_armor",
+          "effect": {"wisdom": 5}
+        }
+      ]
+    },
+    {
+      "id": "try_armor",
+      "text": "You put on Saul's armor, but it's much too big and heavy. You can barely walk. \"I cannot go in these,\" you tell Saul, \"because I am not used to them.\" You remove the armor, deciding to face Goliath with your own familiar tools.",
+      "next": "prepare_for_battle"
+    },
+    {
+      "id": "refuse_armor",
+      "text": "\"I cannot go in these,\" you tell Saul, \"because I am not used to them.\" Your wisdom shows in knowing your own strengths and limitations. You decide to face Goliath with the tools you know best.",
+      "next": "prepare_for_battle"
+    },
+    {
+      "id": "prepare_for_battle",
+      "text": "Instead of armor, you take your staff, select five smooth stones from a stream, put them in your shepherd's bag, and take your sling in hand. Then you approach Goliath, ready for battle.",
+      "asciiArt": "david_prepares",
+      "soundEffect": "water_flowing",
+      "next": "confront_goliath"
+    },
+    {
+      "id": "confront_goliath",
+      "text": "You stand before Goliath, who looks at you with contempt. \"Am I a dog, that you come at me with sticks?\" he roars, cursing you by his gods. \"Come here, and I'll give your flesh to the birds and wild animals!\"",
+      "asciiArt": "goliath_taunts",
+      "next": "decision_final_words"
+    },
+    {
+      "id": "decision_final_words",
+      "text": "Goliath taunts you and curses you by his gods. What do you say before the battle begins?",
+      "choices": [
+        {
+          "text": "\"You come against me with sword and spear, but I come against you in the name of the Lord Almighty\"",
+          "next": "faith_declaration",
+          "effect": {"faith": 10, "courage": 10}
+        },
+        {
+          "text": "\"Today the Lord will deliver you into my hands, and the whole world will know there is a God in Israel\"",
+          "next": "victory_declaration",
+          "effect": {"faith": 10, "determination": 5}
+        },
+        {
+          "text": "Remain silent and focus on your strategy",
+          "next": "silent_focus",
+          "effect": {"wisdom": 5, "determination": 10}
+        }
+      ]
+    },
+    {
+      "id": "faith_declaration",
+      "text": "\"You come against me with sword and spear and javelin, but I come against you in the name of the Lord Almighty, the God of the armies of Israel, whom you have defied. This day the Lord will deliver you into my hands.\"",
+      "next": "battle_begins"
+    },
+    {
+      "id": "victory_declaration",
+      "text": "\"Today the Lord will deliver you into my hands, and I'll strike you down and cut off your head. This very day I will give the carcasses of the Philistine army to the birds and the wild animals, and the whole world will know that there is a God in Israel.\"",
+      "next": "battle_begins"
+    },
+    {
+      "id": "silent_focus",
+      "text": "You remain silent, focusing all your attention on the battle ahead. Your quiet determination is powerful, and you ready your sling with unwavering concentration.",
+      "next": "battle_begins"
+    },
+    {
+      "id": "battle_begins",
+      "text": "As Goliath moves closer to attack, you run quickly toward the battle line to meet him. Reaching into your bag, you take out a stone, put it in your sling, and hurl it with all your might.",
+      "asciiArt": "david_sling",
+      "soundEffect": "sling_whirling",
+      "next": "stone_hits"
+    },
+    {
+      "id": "stone_hits",
+      "text": "The stone sails through the air and strikes Goliath in the forehead, sinking into it. The giant staggers and falls face-down on the ground, defeated by a shepherd boy with a sling and a stone—and faith in God.",
+      "asciiArt": "goliath_falls",
+      "soundEffect": "impact_thud",
+      "next": "decision_aftermath"
+    },
+    {
+      "id": "decision_aftermath",
+      "text": "Goliath lies defeated before you. What do you do next?",
+      "choices": [
+        {
+          "text": "Take Goliath's sword and cut off his head as proof of victory",
+          "next": "take_head",
+          "effect": {"determination": 5, "compassion": -5}
+        },
+        {
+          "text": "Kneel and thank God for the victory",
+          "next": "thank_god",
+          "effect": {"faith": 10, "humility": 10}
+        },
+        {
+          "text": "Call for the Israelite army to pursue the fleeing Philistines",
+          "next": "pursue_army",
+          "effect": {"leadership": 10}
+        }
+      ]
+    },
+    {
+      "id": "take_head",
+      "text": "Without a sword of your own, you stand over Goliath, draw his sword from its sheath, and cut off his head. The Philistine army, seeing their champion defeated, turns and runs in panic.",
+      "next": "army_flees"
+    },
+    {
+      "id": "thank_god",
+      "text": "You kneel on the battlefield and give thanks to God for the victory. Your public display of faith inspires the Israelite army, who raise a mighty cheer and pursue the fleeing Philistines.",
+      "next": "army_flees"
+    },
+    {
+      "id": "pursue_army",
+      "text": "You raise your voice and call for the Israelite army to pursue the enemy. Inspired by your victory, they charge forward with renewed courage, chasing the Philistines all the way back to their cities.",
+      "next": "army_flees"
+    },
+    {
+      "id": "army_flees",
+      "text": "The Israelites pursue the fleeing Philistines as far as Gath and Ekron, strewing the road with their dead. When they return, they plunder the Philistine camp. You take Goliath's head to Jerusalem but keep his weapons as your own.",
+      "next": "saul_questions"
+    },
+    {
+      "id": "saul_questions",
+      "text": "After the battle, King Saul asks, \"Whose son are you, young man?\" You reply, \"I am the son of your servant Jesse of Bethlehem.\" This victory marks the beginning of your journey from shepherd boy to future king of Israel.",
+      "next": "conclusion"
+    },
+    {
+      "id": "conclusion",
+      "text": "Your victory over Goliath brings great honor to your name throughout Israel. Though challenges lie ahead, you have demonstrated that with faith in God, even the most insurmountable obstacles can be overcome. Your courage changes the course of Israel's history, and your name will be remembered for generations to come.",
+      "asciiArt": "david_victory",
+      "next": "end"
+    }
+  ],
+  "teaching": {
+    "mainLesson": "Faith in God can overcome seemingly impossible challenges. It's not about our own strength, but trusting in God's power.",
+    "secondaryLessons": [
+      "God often uses the unlikeliest people to accomplish His purposes.",
+      "True courage comes from knowing that God is with you.",
+      "Our past experiences prepare us for future challenges.",
+      "It's important to use the gifts and abilities God has given you rather than trying to be someone else.",
+      "Standing for God's honor is more important than personal safety."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "1 Samuel 17:45-47",
+        "text": "David said to the Philistine, 'You come against me with sword and spear and javelin, but I come against you in the name of the LORD Almighty, the God of the armies of Israel, whom you have defied. This day the LORD will deliver you into my hands... and the whole world will know that there is a God in Israel.'"
+      },
+      {
+        "reference": "Psalm 18:2",
+        "text": "The LORD is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge, my shield and the horn of my salvation, my stronghold."
+      },
+      {
+        "reference": "1 Samuel 16:7",
+        "text": "The LORD does not look at the things people look at. People look at the outward appearance, but the LORD looks at the heart."
+      },
+      {
+        "reference": "Ephesians 6:10",
+        "text": "Finally, be strong in the Lord and in his mighty power."
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "question": "How tall was Goliath according to the biblical account?",
+      "options": [
+        "Six cubits and a span (about 9 feet)",
+        "Seven cubits (about 10.5 feet)",
+        "Five cubits (about 7.5 feet)",
+        "Four cubits and a span (about 7 feet)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "According to 1 Samuel 17:4, Goliath was 'six cubits and a span,' which translates to approximately 9 feet 9 inches tall."
+    },
+    {
+      "question": "What weapon did David use to defeat Goliath?",
+      "options": [
+        "A sword",
+        "A spear",
+        "A sling and stone",
+        "A bow and arrow"
+      ],
+      "correctAnswer": 2,
+      "explanation": "David used a sling and a smooth stone from the stream to strike Goliath in the forehead, as described in 1 Samuel 17:49."
+    },
+    {
+      "question": "How many stones did David pick up from the stream?",
+      "options": [
+        "Three",
+        "Five",
+        "Seven",
+        "One"
+      ],
+      "correctAnswer": 1,
+      "explanation": "According to 1 Samuel 17:40, David 'chose five smooth stones from the stream, put them in the pouch of his shepherd's bag and, with his sling in his hand, approached the Philistine.'"
+    },
+    {
+      "question": "What previous experience did David share with King Saul to convince him he could fight Goliath?",
+      "options": [
+        "He had been trained in the Egyptian army",
+        "He had killed wolves attacking his village",
+        "He had protected his sheep from lions and bears",
+        "He had won wrestling matches against his brothers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "David told Saul that as a shepherd, he had killed lions and bears that attacked his sheep, which prepared him to face Goliath."
+    },
+    {
+      "question": "What did David do with Goliath's weapon after defeating him?",
+      "options": [
+        "He gave it to King Saul as a trophy",
+        "He put it in his father's house",
+        "He kept it for himself",
+        "He dedicated it to the tabernacle at Nob"
+      ],
+      "correctAnswer": 3,
+      "explanation": "According to 1 Samuel 21:9, David eventually placed Goliath's sword at the tabernacle in Nob, though initially he took it with him as his own weapon."
+    }
+  ],
+  "asciiArtReferences": {
+    "armies_facing": "armies_facing.txt",
+    "goliath_appears": "goliath_appears.txt",
+    "david_arrives": "david_arrives.txt",
+    "before_king": "before_king.txt",
+    "david_prepares": "david_prepares.txt",
+    "goliath_taunts": "goliath_taunts.txt",
+    "david_sling": "david_sling.txt",
+    "goliath_falls": "goliath_falls.txt",
+    "david_victory": "david_victory.txt"
+  }
+}
+

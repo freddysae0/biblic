@@ -1,0 +1,729 @@
+{
+  "id": "joseph",
+  "title": "Joseph and the Coat of Many Colors",
+  "shortDescription": "The journey of a dreamer who overcame betrayal and rose to power through faith and forgiveness.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In the land of Canaan, Jacob had twelve sons, but he loved Joseph more than any of them. To show his special love, Jacob gave Joseph a richly ornamented coat. When his brothers saw that their father loved him more than any of them, they hated Joseph and could not speak a kind word to him.",
+      "asciiArt": "joseph_coat",
+      "next": "joseph_dreams"
+    },
+    {
+      "id": "joseph_dreams",
+      "text": "Joseph had a dream, and when he told it to his brothers, they hated him all the more. He said to them, 'Listen to this dream I had: We were binding sheaves of grain out in the field when suddenly my sheaf rose and stood upright, while your sheaves gathered around mine and bowed down to it.'",
+      "asciiArt": "joseph_dreams",
+      "next": "brothers_reaction"
+    },
+    {
+      "id": "brothers_reaction",
+      "text": "His brothers said to him, 'Do you intend to reign over us? Will you actually rule us?' And they hated him all the more because of his dream and what he had said. Then he had another dream and told it to his brothers: 'I had another dream, and this time the sun and moon and eleven stars were bowing down to me.'",
+      "next": "decision_sharing_dreams"
+    },
+    {
+      "id": "decision_sharing_dreams",
+      "text": "Your brothers are growing increasingly jealous and angry. What will you do about your dreams?",
+      "choices": [
+        {
+          "text": "Share the dream with your father as well",
+          "next": "tell_father",
+          "effect": { "honesty": 5, "wisdom": -5 }
+        },
+        {
+          "text": "Keep future dreams to yourself to avoid angering your brothers further",
+          "next": "keep_quiet",
+          "effect": { "wisdom": 10, "honesty": -5 }
+        },
+        {
+          "text": "Try to explain to your brothers that the dreams come from God",
+          "next": "explain_brothers",
+          "effect": { "faith": 10, "wisdom": 5 }
+        }
+      ]
+    },
+    {
+      "id": "tell_father",
+      "text": "When you tell your father about the dream, he rebukes you, saying, 'What is this dream you had? Will your mother and I and your brothers actually come and bow down to the ground before you?' Your brothers are jealous, but your father keeps the matter in mind.",
+      "next": "sent_to_brothers"
+    },
+    {
+      "id": "keep_quiet",
+      "text": "You decide to keep any future dreams to yourself, but the damage is already done. Your brothers' resentment continues to grow, and they whisper among themselves whenever you approach.",
+      "next": "sent_to_brothers"
+    },
+    {
+      "id": "explain_brothers",
+      "text": "You try to explain that these dreams might be messages from God, but this only makes your brothers angrier. 'So now God speaks to you specially?' they mock. Their resentment deepens, and the divide between you grows wider.",
+      "next": "sent_to_brothers"
+    },
+    {
+      "id": "sent_to_brothers",
+      "text": "One day, your father sends you to check on your brothers who are grazing the flocks near Shechem. 'Go and see if all is well with your brothers and the flocks,' he says, 'and bring word back to me.'",
+      "next": "finding_brothers"
+    },
+    {
+      "id": "finding_brothers",
+      "text": "You travel to Shechem but can't find your brothers. A man tells you they've gone to Dothan, so you continue your journey there. When your brothers see you approaching in the distance, still wearing your special coat, they plot against you.",
+      "asciiArt": "joseph_approaches",
+      "next": "brothers_plot"
+    },
+    {
+      "id": "brothers_plot",
+      "text": "'Here comes that dreamer!' they say to each other. 'Come now, let's kill him and throw him into one of these cisterns and say that a ferocious animal devoured him. Then we'll see what comes of his dreams.'",
+      "next": "reuben_intervenes"
+    },
+    {
+      "id": "reuben_intervenes",
+      "text": "When Reuben, your oldest brother, hears this, he tries to rescue you. 'Let's not take his life,' he says. 'Don't shed any blood. Throw him into this cistern here in the wilderness, but don't lay a hand on him.' Reuben plans to rescue you later and take you back to your father.",
+      "next": "thrown_in_pit"
+    },
+    {
+      "id": "thrown_in_pit",
+      "text": "When you arrive, your brothers strip you of your coat—the beautiful coat your father gave you—and throw you into the cistern. The cistern is empty, with no water in it. As you sit in the darkness, you hear your brothers sitting down to eat.",
+      "asciiArt": "joseph_pit",
+      "next": "decision_in_pit"
+    },
+    {
+      "id": "decision_in_pit",
+      "text": "You are trapped in the pit. What do you do?",
+      "choices": [
+        {
+          "text": "Cry out to your brothers for mercy",
+          "next": "plead_brothers",
+          "effect": { "pride": -5, "humility": 5 }
+        },
+        {
+          "text": "Pray to God for deliverance",
+          "next": "pray_in_pit",
+          "effect": { "faith": 10 }
+        },
+        {
+          "text": "Look for a way to escape on your own",
+          "next": "attempt_escape",
+          "effect": { "determination": 10, "faith": -5 }
+        }
+      ]
+    },
+    {
+      "id": "plead_brothers",
+      "text": "You cry out to your brothers, begging for mercy. Although they hear your cries, they harden their hearts against you. However, your pleas do affect some of them, making them uncomfortable with what they've done.",
+      "next": "merchants_appear"
+    },
+    {
+      "id": "pray_in_pit",
+      "text": "In the darkness of the pit, you turn to God in prayer, asking for His protection and guidance. A sense of peace comes over you despite your dire circumstances, and you find courage to face whatever comes next.",
+      "next": "merchants_appear"
+    },
+    {
+      "id": "attempt_escape",
+      "text": "You search for handholds in the walls of the pit, trying to climb out. The walls are too steep and smooth, and your attempts only leave you exhausted and with scraped hands. There seems to be no way out without help.",
+      "next": "merchants_appear"
+    },
+    {
+      "id": "merchants_appear",
+      "text": "While you're in the pit, a caravan of Ishmaelite merchants passes by, heading to Egypt with spices, balm, and myrrh. Judah, one of your brothers, speaks up: 'What will we gain if we kill our brother and cover up his blood? Come, let's sell him to the Ishmaelites and not lay our hands on him; after all, he is our brother, our own flesh and blood.'",
+      "next": "sold_to_merchants"
+    },
+    {
+      "id": "sold_to_merchants",
+      "text": "Your brothers pull you out of the cistern and sell you to the Ishmaelites for twenty shekels of silver. As you're led away in chains, you look back at your brothers one last time, uncertain of what lies ahead in Egypt.",
+      "asciiArt": "joseph_sold",
+      "soundEffect": "chains_rattling",
+      "next": "brothers_deception"
+    },
+    {
+      "id": "brothers_deception",
+      "text": "After selling you, your brothers take your special coat, slaughter a goat, and dip the coat in the blood. They bring it back to your father and say, 'We found this. Examine it to see whether it is your son's robe.' Jacob recognizes it and concludes a ferocious animal has devoured you. He mourns for many days and refuses to be comforted.",
+      "next": "potiphar_house"
+    },
+    {
+      "id": "potiphar_house",
+      "text": "Meanwhile, the merchants take you to Egypt and sell you to Potiphar, one of Pharaoh's officials, the captain of the guard. The Lord is with you, and you prosper in Potiphar's house. Potiphar notices this and puts you in charge of his household and everything he owns.",
+      "next": "potiphar_wife"
+    },
+    {
+      "id": "potiphar_wife",
+      "text": "Joseph, now a handsome and well-built young man, catches the attention of Potiphar's wife. 'Come to bed with me!' she says, grabbing you by your cloak. Day after day, she continues to proposition you.",
+      "next": "decision_potiphar_wife"
+    },
+    {
+      "id": "decision_potiphar_wife",
+      "text": "Potiphar's wife continually tries to seduce you. How do you respond?",
+      "choices": [
+        {
+          "text": "Firmly refuse, explaining it would be a sin against God",
+          "next": "refuse_wife",
+          "effect": { "faith": 10, "integrity": 10 }
+        },
+        {
+          "text": "Report her behavior to Potiphar",
+          "next": "report_to_potiphar",
+          "effect": { "honesty": 5, "wisdom": -5 }
+        },
+        {
+          "text": "Avoid being alone with her",
+          "next": "avoid_wife",
+          "effect": { "wisdom": 10 }
+        }
+      ]
+    },
+    {
+      "id": "refuse_wife",
+      "text": "You tell her, 'My master has withheld nothing from me except you, because you are his wife. How then could I do such a wicked thing and sin against God?' Your refusal only makes her more determined.",
+      "next": "wife_accusation"
+    },
+    {
+      "id": "report_to_potiphar",
+      "text": "Before you can speak to Potiphar, his wife twists the situation, accusing you of trying to take advantage of her. Without giving you a chance to explain, Potiphar's anger burns and he has you thrown into prison.",
+      "next": "prison"
+    },
+    {
+      "id": "avoid_wife",
+      "text": "You try to avoid being alone with Potiphar's wife, but one day, no one else is in the house. She catches you by your cloak and demands again, 'Come to bed with me!' You run away, leaving your cloak in her hand.",
+      "next": "wife_accusation"
+    },
+    {
+      "id": "wife_accusation",
+      "text": "Potiphar's wife, still holding your cloak, calls to the servants: 'Look, this Hebrew has been brought to us to make sport of us! He came in here to sleep with me, but I screamed. When he heard me scream, he left his cloak beside me and ran out of the house.' When Potiphar hears this story, his anger burns, and he has you thrown into prison.",
+      "next": "prison"
+    },
+    {
+      "id": "prison",
+      "text": "You find yourself in the king's prison, but even there, the Lord is with you. The prison warden shows you favor and puts you in charge of all the prisoners. Whatever happens in the prison, you are responsible for it.",
+      "asciiArt": "joseph_prison",
+      "next": "cupbearer_baker"
+    },
+    {
+      "id": "cupbearer_baker",
+      "text": "Some time later, Pharaoh's chief cupbearer and chief baker offend their master and are thrown into prison. One night, both men have dreams. In the morning, you notice they look troubled and ask, 'Why do you look so sad today?'",
+      "next": "decision_dreams_interpretation"
+    },
+    {
+      "id": "decision_dreams_interpretation",
+      "text": "The cupbearer and baker tell you about their troubling dreams. How do you respond?",
+      "choices": [
+        {
+          "text": "Offer to interpret their dreams through God's help",
+          "next": "interpret_dreams",
+          "effect": { "faith": 10, "wisdom": 5 }
+        },
+        {
+          "text": "Listen sympathetically but avoid getting involved",
+          "next": "avoid_interpretation",
+          "effect": { "caution": 10, "faith": -5 }
+        },
+        {
+          "text": "Ask them to share their dreams in detail",
+          "next": "ask_details",
+          "effect": { "wisdom": 5, "curiosity": 5 }
+        }
+      ]
+    },
+    {
+      "id": "interpret_dreams",
+      "text": "You say to them, 'Do not interpretations belong to God? Tell me your dreams.' After hearing their dreams, you interpret that the cupbearer will be restored to his position, but the baker will be executed. You ask the cupbearer to remember you when he is freed.",
+      "next": "dreams_fulfilled"
+    },
+    {
+      "id": "avoid_interpretation",
+      "text": "You decide it's safer not to get involved with dream interpretation, but as they continue to look troubled, you reconsider. 'Tell me your dreams,' you finally say. 'Perhaps God will reveal their meaning.'",
+      "next": "interpret_dreams"
+    },
+    {
+      "id": "ask_details",
+      "text": "You ask them to share their dreams in detail. After listening carefully, you feel God's guidance in understanding their meaning. You tell the cupbearer he will be restored to his position in three days, but the baker will be executed.",
+      "next": "dreams_fulfilled"
+    },
+    {
+      "id": "dreams_fulfilled",
+      "text": "Three days later, on Pharaoh's birthday, everything happens just as you interpreted. The chief cupbearer is restored to his position, and the chief baker is executed. Despite your request, the cupbearer forgets all about you, and you remain in prison for two more years.",
+      "next": "pharaoh_dreams"
+    },
+    {
+      "id": "pharaoh_dreams",
+      "text": "Two full years later, Pharaoh has two dreams that trouble him deeply. None of the magicians and wise men of Egypt can interpret them. Finally, the chief cupbearer remembers you and tells Pharaoh, 'Today I am reminded of my shortcomings...'",
+      "next": "summoned_to_pharaoh"
+    },
+    {
+      "id": "summoned_to_pharaoh",
+      "text": "Pharaoh summons you from prison. After bathing and changing your clothes, you stand before him. 'I had a dream, and no one can interpret it,' he says. 'But I have heard it said of you that when you hear a dream you can interpret it.'",
+      "asciiArt": "joseph_pharaoh",
+      "next": "decision_before_pharaoh"
+    },
+    {
+      "id": "decision_before_pharaoh",
+      "text": "Standing before Pharaoh, one of the most powerful rulers in the world, how do you respond to his request?",
+      "choices": [
+        {
+          "text": "Humbly acknowledge that interpretations belong to God, not yourself",
+          "next": "acknowledge_god",
+          "effect": { "faith": 10, "humility": 10 }
+        },
+        {
+          "text": "Confidently tell Pharaoh you can interpret his dream",
+          "next": "confident_answer",
+          "effect": { "pride": 5, "leadership": 5 }
+        },
+        {
+          "text": "Ask Pharaoh to first describe his dreams in detail",
+          "next": "ask_pharaoh",
+          "effect": { "wisdom": 10 }
+        }
+      ]
+    },
+    {
+      "id": "acknowledge_god",
+      "text": "You respond humbly, 'I cannot do it, but God will give Pharaoh the answer he desires.' Your acknowledgment of God's power impresses Pharaoh, who then describes his dreams.",
+      "next": "pharaoh_describes"
+    },
+    {
+      "id": "confident_answer",
+      "text": "You stand confidently before Pharaoh, but then pause and correct yourself: 'It is not in me; God will give Pharaoh a favorable answer.' The king then describes his dreams to you.",
+      "next": "pharaoh_describes"
+    },
+    {
+      "id": "ask_pharaoh",
+      "text": "You ask Pharaoh to describe his dreams in detail, listening carefully as he recounts them. After he finishes, you acknowledge that God will provide the interpretation.",
+      "next": "pharaoh_describes"
+    },
+    {
+      "id": "pharaoh_describes",
+      "text": "Pharaoh describes his dreams: 'I was standing on the bank of the Nile, when seven fat, sleek cows came up and grazed. After them, seven other cows came up—scrawny, very ugly and lean—and ate the seven fat cows. Then I dreamed again: Seven full, good heads of grain grew on a single stalk. After them, seven worthless, withered heads sprouted. The thin heads swallowed up the good heads.'",
+      "next": "interpret_pharaoh"
+    },
+    {
+      "id": "interpret_pharaoh",
+      "text": "God gives you understanding of the dreams. You explain to Pharaoh: 'The seven good cows and good heads of grain are seven years of abundance. The seven lean cows and worthless heads are seven years of famine that will follow. God has shown Pharaoh what he is about to do. Seven years of great abundance are coming throughout Egypt, but they will be followed by seven years of famine.'",
+      "next": "suggest_plan"
+    },
+    {
+      "id": "suggest_plan",
+      "text": "You continue, 'Now Pharaoh should look for a wise and discerning man and put him in charge of the land. Pharaoh should appoint commissioners to collect one-fifth of the harvest during the seven years of abundance. This food will be a reserve for the country during the seven years of famine.'",
+      "next": "decision_promotion"
+    },
+    {
+      "id": "decision_promotion",
+      "text": "Pharaoh is impressed with your interpretation and plan. 'Since God has made all this known to you, there is no one so discerning and wise as you,' he says. 'You shall be in charge of my palace, and all my people are to submit to your orders.' How do you respond to this sudden promotion?",
+      "choices": [
+        {
+          "text": "Accept with gratitude, recognizing God's providence",
+          "next": "accept_position",
+          "effect": { "faith": 10, "leadership": 10 }
+        },
+        {
+          "text": "Express concern about your ability to handle such responsibility",
+          "next": "express_concern",
+          "effect": { "humility": 10, "wisdom": 5 }
+        },
+        {
+          "text": "Request authority to immediately begin gathering grain",
+          "next": "request_authority",
+          "effect": { "determination": 10, "leadership": 5 }
+        }
+      ]
+    },
+    {
+      "id": "accept_position",
+      "text": "You accept the role with gratitude, acknowledging that God has orchestrated these events. Pharaoh places his signet ring on your finger, dresses you in fine linen, and puts a gold chain around your neck. 'I hereby put you in charge of the whole land of Egypt,' he declares.",
+      "next": "rise_to_power"
+    },
+    {
+      "id": "express_concern",
+      "text": "You humbly express concern about your readiness, but Pharaoh insists, 'God has shown you all this. No one is better qualified.' He then places his signet ring on your finger and gives you authority over all Egypt, second only to himself.",
+      "next": "rise_to_power"
+    },
+    {
+      "id": "request_authority",
+      "text": "You immediately request authority to begin preparations for the coming abundance and famine. Impressed by your initiative, Pharaoh places his signet ring on your finger, saying, 'I hereby put you in charge of the whole land of Egypt. Only with respect to the throne will I be greater than you.'",
+      "next": "rise_to_power"
+    },
+    {
+      "id": "rise_to_power",
+      "text": "Pharaoh gives you a new name, Zaphenath-Paneah, and a wife, Asenath. You are thirty years old when you enter Pharaoh's service. For the next seven years, you travel throughout Egypt, gathering and storing the abundant harvests in preparation for the famine.",
+      "asciiArt": "joseph_governor",
+      "next": "famine_begins"
+    },
+    {
+      "id": "famine_begins",
+      "text": "As you predicted, after seven years of abundance, a severe famine strikes the land. But thanks to your planning, Egypt has plenty of food. The famine extends to Canaan, where your father and brothers are struggling to survive.",
+      "next": "brothers_arrive"
+    },
+    {
+      "id": "brothers_arrive",
+      "text": "Your ten older brothers come to Egypt to buy grain. They bow down before you, just as in your dreams long ago. Because you are dressed as an Egyptian official and it has been over 20 years, they do not recognize you. But you recognize them immediately.",
+      "asciiArt": "brothers_bow",
+      "next": "decision_brothers_reunion"
+    },
+    {
+      "id": "decision_brothers_reunion",
+      "text": "Your brothers stand before you, not recognizing who you are. How do you respond to them?",
+      "choices": [
+        {
+          "text": "Reveal your identity immediately and forgive them",
+          "next": "immediate_forgiveness",
+          "effect": { "forgiveness": 10, "wisdom": -5 }
+        },
+        {
+          "text": "Test them to see if they have changed",
+          "next": "test_brothers",
+          "effect": { "wisdom": 10, "caution": 5 }
+        },
+        {
+          "text": "Treat them harshly to punish them for what they did",
+          "next": "punish_brothers",
+          "effect": { "vengeance": 5, "forgiveness": -5 }
+        }
+      ]
+    },
+    {
+      "id": "immediate_forgiveness",
+      "text": "Overwhelmed with emotion, you clear the room of attendants and reveal your identity. 'I am Joseph, your brother!' you say through tears. Your brothers are terrified, but you reassure them: 'Don't be distressed that you sold me here. It was God who sent me ahead to save lives.'",
+      "next": "reconciliation"
+    },
+    {
+      "id": "reconciliation",
+      "text": "Seeing their fear, you embrace each of your brothers, weeping with them. You call for more food and comfort, and the atmosphere shifts from fear to joy. You say, 'Go quickly to our father and tell him I am alive and honored in Egypt. Bring him and all our family here, so we can live together in safety.' Pharaoh hears of your reunion and offers the best of Egypt for your family.",
+      "next": "family_reunion"
+    },
+    {
+      "id": "test_brothers",
+      "text": "You decide to test your brothers to see if they have changed. Speaking through an interpreter, you accuse them of being spies. You demand they bring their youngest brother (Benjamin) to prove their honesty, and you keep Simeon as a hostage. You secretly return their money in their grain sacks.",
+      "next": "brothers_return"
+    },
+    {
+      "id": "punish_brothers",
+      "text": "You speak harshly to them, accusing them of being spies. When they explain their family situation, you demand they bring their youngest brother to prove their honesty. You imprison all of them for three days before releasing all but Simeon, whom you keep as hostage.",
+      "next": "brothers_return"
+    },
+    {
+      "id": "brothers_return",
+      "text": "Your brothers return to Canaan and tell your father everything. Jacob is devastated about Simeon and refuses to let Benjamin go. But as the famine worsens, they eventually must return to Egypt with Benjamin. When they arrive, you are moved at the sight of your full brother.",
+      "next": "decision_final_test"
+    },
+    {
+      "id": "decision_final_test",
+      "text": "Your brothers have returned with Benjamin. What will you do now?",
+      "choices": [
+        {
+          "text": "Host a feast for them and reveal your identity",
+          "next": "host_feast",
+          "effect": { "compassion": 10, "forgiveness": 5 }
+        },
+        {
+          "text": "Test them one final time with a silver cup",
+          "next": "silver_cup_test",
+          "effect": { "wisdom": 5, "caution": 5 }
+        },
+        {
+          "text": "Ask them privately about their family",
+          "next": "ask_family",
+          "effect": { "wisdom": 5, "compassion": 5 }
+        }
+      ]
+    },
+    {
+      "id": "host_feast",
+      "text": "You prepare a feast for your brothers. They are amazed when you seat them in order of their ages. You send Benjamin five times more food than the others. After the feast, you are finally ready to reveal your identity.",
+      "next": "joseph_reveals"
+    },
+    {
+      "id": "silver_cup_test",
+      "text": "You secretly place your silver cup in Benjamin's sack. After your brothers leave, you send guards to arrest them for theft. When the cup is found in Benjamin's sack, they all return to your palace. Judah steps forward and offers himself as a slave instead of Benjamin, showing he has truly changed.",
+      "next": "joseph_reveals"
+    },
+    {
+      "id": "ask_family",
+      "text": "You ask your brothers about their family and your father. Their sincere concern for their father and Benjamin touches you deeply. You can no longer control your emotions and prepare to reveal your identity.",
+      "next": "joseph_reveals"
+    },
+    {
+      "id": "joseph_reveals",
+      "text": "Unable to control yourself any longer, you dismiss all your attendants and weep loudly. 'I am Joseph!' you reveal to your astonished brothers. 'Is my father still living?' Your brothers are terrified and cannot answer you.",
+      "asciiArt": "joseph_reveals",
+      "soundEffect": "emotional_music",
+      "next": "decision_forgiveness"
+    },
+    {
+      "id": "decision_forgiveness",
+      "text": "Your brothers stand before you, terrified. How do you address what they did to you many years ago?",
+      "choices": [
+        {
+          "text": "Completely forgive them, explaining how God used their actions for good",
+          "next": "complete_forgiveness",
+          "effect": { "forgiveness": 10, "faith": 10 }
+        },
+        {
+          "text": "Forgive them but acknowledge the pain they caused",
+          "next": "acknowledge_pain",
+          "effect": { "forgiveness": 5, "honesty": 10 }
+        },
+        {
+          "text": "Focus on the future and your father without discussing the past",
+          "next": "focus_future",
+          "effect": { "wisdom": 5, "leadership": 5 }
+        }
+      ]
+    },
+
+    {
+      "id": "complete_forgiveness",
+      "text": "You tell your brothers, 'Don't be afraid. Am I in the place of God? You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives. So then, don't be afraid. I will provide for you and your children.' And you reassure them and speak kindly to them.",
+      "next": "family_reunion"
+    },
+    {
+      "id": "acknowledge_pain",
+      "text": "You acknowledge the pain of betrayal: 'What you did hurt me deeply.' Then you continue with forgiveness: 'But God used your actions for a greater purpose. He sent me ahead to preserve life. It was not you who sent me here, but God.' Your honesty and forgiveness move your brothers to tears.",
+      "next": "family_reunion"
+    },
+    {
+      "id": "focus_future",
+      "text": "You focus on the present situation: 'Hurry back to my father and say to him: Your son Joseph is still alive! Come down to me; don't delay. You shall live in Goshen, and you shall be near me—you, your children, your grandchildren, your flocks, your herds, and all that you have.'",
+      "next": "family_reunion"
+    },
+    {
+      "id": "family_reunion",
+      "text": "The news reaches Pharaoh, who tells you to send wagons to bring your father and entire family to Egypt. When your brothers return to Canaan with the news, Jacob is stunned but overjoyed. 'My son Joseph is still alive! I will go and see him before I die.'",
+      "next": "jacob_journey"
+    },
+    {
+      "id": "jacob_journey",
+      "text": "Jacob sets out for Egypt with all his family and possessions. At Beersheba, he offers sacrifices to God, who speaks to him in a vision: 'Do not be afraid to go down to Egypt, for I will make you into a great nation there. I will go down to Egypt with you, and I will surely bring you back again. And Joseph's own hand will close your eyes.'",
+      "next": "decision_meeting_preparation"
+    },
+    {
+      "id": "decision_meeting_preparation",
+      "text": "Your father and family are approaching Egypt. How do you prepare for this momentous reunion?",
+      "choices": [
+        {
+          "text": "Go personally to Goshen to meet your father",
+          "next": "personal_meeting",
+          "effect": { "love": 10, "honor": 5 }
+        },
+        {
+          "text": "Prepare an elaborate welcome ceremony with Egyptian officials",
+          "next": "elaborate_welcome",
+          "effect": { "leadership": 5, "honor": 10 }
+        },
+        {
+          "text": "Send gifts and provisions ahead to Goshen",
+          "next": "send_provisions",
+          "effect": { "wisdom": 5, "compassion": 5 }
+        }
+      ]
+    },
+    {
+      "id": "personal_meeting",
+      "text": "You prepare your chariot and hurry to Goshen. When you see your father in the distance, you leap from your chariot and run to him. You throw your arms around him and weep for a long time. Jacob says, 'Now I am ready to die, since I have seen for myself that you are still alive.'",
+      "asciiArt": "joseph_reunion",
+      "soundEffect": "emotional_music",
+      "next": "pharaoh_meeting"
+    },
+    {
+      "id": "elaborate_welcome",
+      "text": "You arrange for an elaborate welcome with Egyptian officials and then hurry to Goshen yourself. When you finally see your father, all protocol is forgotten. You throw your arms around him and weep for a long time, overwhelmed by emotion. Your father says, 'Now I am ready to die, since I have seen for myself that you are still alive.'",
+      "next": "pharaoh_meeting"
+    },
+    {
+      "id": "send_provisions",
+      "text": "You send wagons of provisions and gifts to Goshen, then follow personally. The moment you see your father, you are overcome with emotion. You embrace him tightly and weep on his neck for a long time. Your father says, 'Now I am ready to die, since I have seen for myself that you are still alive.'",
+      "next": "pharaoh_meeting"
+    },
+    {
+      "id": "pharaoh_meeting",
+      "text": "You present five of your brothers and your father to Pharaoh. Jacob blesses Pharaoh, and Pharaoh is impressed by your family. He confirms that they can settle in Goshen, the best part of the land. You provide your father and brothers with all they need during the severe famine.",
+      "next": "famine_continues"
+    },
+    {
+      "id": "famine_continues",
+      "text": "As the famine continues, people throughout Egypt and Canaan use up all their money buying grain from you. Eventually, they bring their livestock in exchange for food. Finally, they sell their land and themselves to Pharaoh. Through your wise administration, you save countless lives while strengthening Pharaoh's position.",
+      "next": "decision_leadership"
+    },
+    {
+      "id": "decision_leadership",
+      "text": "The people have sold themselves and their land to survive. How do you manage this situation?",
+      "choices": [
+        {
+          "text": "Implement a fair system where they work as tenant farmers giving one-fifth to Pharaoh",
+          "next": "fair_system",
+          "effect": { "wisdom": 10, "justice": 10 }
+        },
+        {
+          "text": "Show special favor to your family, exempting them from the arrangement",
+          "next": "family_favor",
+          "effect": { "loyalty": 5, "justice": -5 }
+        },
+        {
+          "text": "Focus on storing up more grain for the remaining years of famine",
+          "next": "focus_storage",
+          "effect": { "wisdom": 5, "determination": 5 }
+        }
+      ]
+    },
+    {
+      "id": "fair_system",
+      "text": "You implement a fair system: 'I have bought you and your land today for Pharaoh. Here is seed for you to plant. When the harvest comes, give a fifth to Pharaoh. The other four-fifths you may keep as seed for the fields and as food.' The people are grateful for your fairness: 'You have saved our lives. May we find favor in your eyes, my lord.'",
+      "next": "jacob_blessing"
+    },
+    {
+      "id": "family_favor",
+      "text": "While implementing a system where Egyptians give one-fifth of their harvest to Pharaoh, you ensure your family is settled comfortably in Goshen, exempt from these requirements. Your family prospers, and the Egyptians accept the arrangement out of respect for you.",
+      "next": "jacob_blessing"
+    },
+    {
+      "id": "focus_storage",
+      "text": "You focus on continuing to store food for the remaining years of famine. You implement a fair system where the people can farm Pharaoh's land, giving one-fifth of their harvest to Pharaoh while keeping the rest. This arrangement ensures everyone's survival through the difficult years.",
+      "next": "jacob_blessing"
+    },
+    {
+      "id": "jacob_blessing",
+      "text": "Seventeen years pass with your father living in Egypt. When Jacob is near death, he calls you to his side. He adopts your two sons, Ephraim and Manasseh, as his own. Then he calls all his sons together and gives each a blessing, prophesying their future. To your surprise, he gives the greater blessing to your younger son, Ephraim.",
+      "next": "jacob_death"
+    },
+    {
+      "id": "jacob_death",
+      "text": "After blessing his sons, your father dies at the age of 147. You throw yourself on him, weeping and kissing his face. Following his instructions, you and your brothers carry his body back to Canaan for burial in the family tomb at Machpelah, accompanied by a large procession of Egyptians.",
+      "next": "decision_final_forgiveness"
+    },
+    {
+      "id": "decision_final_forgiveness",
+      "text": "After your father's burial, your brothers fear that you might now take revenge on them. They send a message: 'Your father left these instructions before he died: Forgive your brothers.' What will you do?",
+      "choices": [
+        {
+          "text": "Reassure them that you have completely forgiven them",
+          "next": "final_forgiveness",
+          "effect": { "forgiveness": 10, "faith": 10 }
+        },
+        {
+          "text": "Tell them you will continue to provide for them out of duty",
+          "next": "duty_provision",
+          "effect": { "honor": 5, "forgiveness": 0 }
+        },
+        {
+          "text": "Explain how God turned their evil intentions into good",
+          "next": "gods_providence",
+          "effect": { "wisdom": 10, "faith": 10 }
+        }
+      ]
+    },
+    {
+      "id": "final_forgiveness",
+      "text": "You weep as they speak to you. 'Don't be afraid,' you say. 'You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives. So then, don't be afraid. I will provide for you and your children.' You reassure them and speak kindly to them, demonstrating complete forgiveness.",
+      "next": "conclusion"
+    },
+    {
+      "id": "duty_provision",
+      "text": "You tell your brothers that you will continue to provide for them and their families. While you don't directly address forgiveness, your consistent actions of care and provision speak louder than words. Your brothers gradually come to trust your good intentions toward them.",
+      "next": "conclusion"
+    },
+    {
+      "id": "gods_providence",
+      "text": "You explain to your brothers, 'You intended to harm me, but God intended it for good to accomplish saving many lives. Our story is about God's plan, not your mistakes.' Your perspective of seeing God's hand in all events brings peace to your family relationships.",
+      "next": "conclusion"
+    },
+    {
+      "id": "conclusion",
+      "text": "You live to see your children to the third generation. Before your death at 110 years old, you tell your brothers, 'God will surely come to your aid and take you up out of this land to the land he promised to Abraham, Isaac, and Jacob.' You make them promise to carry your bones to the Promised Land when God brings them back. Your life stands as testimony to God's faithfulness and the power of forgiveness.",
+      "asciiArt": "joseph_legacy",
+      "next": "end"
+    }
+  ],
+  "teaching": {
+    "mainLesson": "God can work through difficult circumstances to accomplish His greater purposes. What others intend for harm, God can use for good.",
+    "secondaryLessons": [
+      "The power of forgiveness can heal even the deepest wounds and broken relationships.",
+      "Pride and favoritism can cause serious family conflict and should be avoided.",
+      "Faithfulness in small responsibilities leads to greater opportunities.",
+      "Integrity means doing what is right even when it costs you personally.",
+      "God's timing may not be our timing, but His plans are worth waiting for."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "Genesis 50:20",
+        "text": "You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives."
+      },
+      {
+        "reference": "Romans 8:28",
+        "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+      },
+      {
+        "reference": "Psalm 105:19",
+        "text": "Until the time came to fulfill his dreams, the LORD tested Joseph's character."
+      },
+      {
+        "reference": "Colossians 3:13",
+        "text": "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you."
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "question": "Why did Joseph's brothers hate him?",
+      "options": [
+        "He stole from them",
+        "He was their father's favorite and had dreams of ruling over them",
+        "He was the firstborn son",
+        "He refused to help with their work"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Joseph's brothers hated him because their father favored him and gave him a special coat, and because Joseph had dreams that suggested he would rule over them."
+    },
+    {
+      "question": "What did Joseph say was the true reason he ended up in Egypt?",
+      "options": [
+        "His brothers' jealousy",
+        "His own pride and arrogance",
+        "God sent him to save lives during the famine",
+        "Pharaoh needed his administrative skills"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Joseph told his brothers, 'God sent me ahead of you to preserve for you a remnant on earth and to save your lives by a great deliverance. So then, it was not you who sent me here, but God.'"
+    },
+    {
+      "question": "How many years of plenty and famine did Joseph interpret from Pharaoh's dreams?",
+      "options": [
+        "3 years of plenty, 3 years of famine",
+        "5 years of plenty, 5 years of famine",
+        "7 years of plenty, 7 years of famine",
+        "10 years of plenty, 10 years of famine"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Joseph interpreted that there would be seven years of abundance followed by seven years of severe famine throughout Egypt and surrounding regions."
+    },
+    {
+      "question": "What did Joseph do when first confronted by Potiphar's wife?",
+      "options": [
+        "He reported her to Potiphar",
+        "He gave in to her advances",
+        "He refused, saying it would be a sin against God",
+        "He asked to be assigned to different duties"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Joseph refused, saying 'How could I do such a wicked thing and sin against God?' His integrity cost him dearly when she falsely accused him, but he maintained his moral principles."
+    },
+    {
+      "question": "How old was Joseph when he died, according to the biblical account?",
+      "options": [
+        "90 years old",
+        "100 years old",
+        "110 years old",
+        "120 years old"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Joseph lived to be 110 years old, seeing his children to the third generation before he died in Egypt."
+    }
+  ],
+  "asciiArtReferences": {
+    "joseph_coat": "joseph_coat.txt",
+    "joseph_dreams": "joseph_dreams.txt",
+    "joseph_approaches": "joseph_approaches.txt",
+    "joseph_pit": "joseph_pit.txt",
+    "joseph_sold": "joseph_sold.txt",
+    "joseph_prison": "joseph_prison.txt",
+    "joseph_pharaoh": "joseph_pharaoh.txt",
+    "joseph_governor": "joseph_governor.txt",
+    "brothers_bow": "brothers_bow.txt",
+    "joseph_reveals": "joseph_reveals.txt",
+    "joseph_reunion": "joseph_reunion.txt",
+    "joseph_legacy": "joseph_legacy.txt"
+  }
+}
