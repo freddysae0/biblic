@@ -2,8 +2,10 @@
 
 An interactive biblical text adventure game with moral teachings and challenges.
 
-![Biblic Game](https://via.placeholder.com/800x400?text=Biblic+Game)
-
+![Biblic Game](https://i.ibb.co/Rkb84b2W/main.png)
+![Noah](https://i.ibb.co/b5Ztbqvp/noah1.png)
+![Jose](https://i.ibb.co/p6HcQYVx/jose1.png)
+![Jose](https://i.ibb.co/GQ4XjzT3/jose2.png)
 ## Description
 
 Biblic Game is a command-line interactive text adventure that brings biblical stories to life through engaging narratives, meaningful choices, and educational challenges. It combines storytelling with moral teachings and spiritual lessons, allowing players to experience famous biblical stories in a new and interactive way.
