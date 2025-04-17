@@ -2,6 +2,8 @@
 
 An interactive biblical text adventure game with moral teachings and challenges.
 
+REPO: https://github.com/freddysae0/biblic
+
 ![Biblic Game](https://i.ibb.co/Rkb84b2W/main.png)
 ![Noah](https://i.ibb.co/b5Ztbqvp/noah1.png)
 ![Jose](https://i.ibb.co/p6HcQYVx/jose1.png)

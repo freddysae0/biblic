@@ -1,6 +1,6 @@
 {
   "name": "biblic",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "An interactive biblical text adventure game with moral teachings and challenges",
   "main": "src/index.js",
   "type": "module",
