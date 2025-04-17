@@ -1,0 +1,270 @@
+{
+  "id": "abraham",
+  "title": "Abraham: Father of Faith",
+  "shortDescription": "The journey of a man who left everything to follow God's call and became the father of many nations.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In the land of Ur, there lived a man named Abram. At seventy-five years old, he had wealth and family, but no children with his wife Sarai. They had settled into life in a prosperous city, among their kinfolk.",
+      "asciiArt": "abraham_intro",
+      "next": "gods_call"
+    },
+    {
+      "id": "gods_call",
+      "text": "One day, God spoke to Abram: 'Leave your country, your people and your father's household and go to the land I will show you. I will make you into a great nation, and I will bless you; I will make your name great, and you will be a blessing.'",
+      "asciiArt": "god_speaks_abraham",
+      "soundEffect": "divine_voice",
+      "next": "decision_leave"
+    },
+    {
+      "id": "decision_leave",
+      "text": "God has called you to leave everything familiar behind and journey to an unknown land. What will you do?",
+      "choices": [
+        {
+          "text": "Obey immediately, trusting that God has a purpose",
+          "next": "journey_moriah",
+          "effect": {"faith": 15, "obedience": 15}
+        },
+        {
+          "text": "Question God's command, seeking clarification",
+          "next": "question_command",
+          "effect": {"faith": -5, "understanding": 5}
+        },
+        {
+          "text": "Delay the journey, hoping God might change His mind",
+          "next": "delay_journey",
+          "effect": {"obedience": -10, "faith": -10}
+        }
+      ]
+    },
+    {
+      "id": "question_command",
+      "text": "You question God's command, struggling to understand how this aligns with His promise. Though you receive no immediate answer, you eventually realize this requires trust beyond understanding. With a heavy heart, you prepare for the journey.",
+      "next": "journey_moriah"
+    },
+    {
+      "id": "delay_journey",
+      "text": "You delay, hoping God might relent. The weight of the command bears heavily on you. After wrestling with the decision, you ultimately recognize that true faith requires obedience, even when it's difficult.",
+      "next": "journey_moriah"
+    },
+    {
+      "id": "journey_moriah",
+      "text": "Early the next morning, you saddle your donkey and take two servants along with Isaac. You cut enough wood for the burnt offering and set out for the place God had told you about. On the third day, you spot the mountain in the distance.",
+      "asciiArt": "journey_to_moriah",
+      "next": "approaching_mountain"
+    },
+    {
+      "id": "approaching_mountain",
+      "text": "As you approach the mountain, you tell your servants, 'Stay here with the donkey while I and the boy go over there. We will worship and then we will come back to you.' You place the wood on Isaac's shoulders while you carry the fire and the knife.",
+      "next": "isaac_question"
+    },
+    {
+      "id": "isaac_question",
+      "text": "As you walk together, Isaac speaks up: 'Father, the fire and wood are here, but where is the lamb for the burnt offering?' Your heart nearly breaks at his innocent question.",
+      "next": "decision_tell_isaac"
+    },
+    {
+      "id": "decision_tell_isaac",
+      "text": "Isaac has asked about the sacrifice. What will you tell him?",
+      "choices": [
+        {
+          "text": "Tell him the truth about God's command",
+          "next": "tell_truth",
+          "effect": {"honesty": 10, "faith": 5}
+        },
+        {
+          "text": "Reassure him that God will provide the lamb",
+          "next": "god_will_provide",
+          "effect": {"faith": 15, "prophecy": 10}
+        },
+        {
+          "text": "Avoid answering directly to spare him worry",
+          "next": "avoid_answer",
+          "effect": {"compassion": 5, "honesty": -5}
+        }
+      ]
+    },
+    {
+      "id": "tell_truth",
+      "text": "With trembling voice, you explain God's command to Isaac. To your amazement, though afraid, Isaac submits to God's will, demonstrating faith beyond his years.",
+      "next": "altar_preparation"
+    },
+    {
+      "id": "avoid_answer",
+      "text": "You change the subject, unable to share the full truth. The burden weighs even heavier on you as you continue the journey in silence.",
+      "next": "altar_preparation"
+    },
+    {
+      "id": "god_will_provide",
+      "text": "'God himself will provide the lamb for the burnt offering, my son,' you answer, speaking words of faith even in your uncertainty. In ways you cannot yet understand, you are prophesying.",
+      "next": "altar_preparation"
+    },
+    {
+      "id": "altar_preparation",
+      "text": "When you reach the place God had told you about, you build an altar and arrange the wood on it. With shaking hands, you bind your son Isaac and lay him on the altar, atop the wood.",
+      "asciiArt": "isaac_on_altar",
+      "next": "raising_knife"
+    },
+    {
+      "id": "raising_knife",
+      "text": "You reach out your hand and take the knife to slay your son. Every fiber of your being resists, yet your obedience to God pushes you forward. The moment seems frozen in time as you raise the knife.",
+      "asciiArt": "abraham_knife",
+      "soundEffect": "tense_moment",
+      "next": "angel_calls"
+    },
+    {
+      "id": "angel_calls",
+      "text": "Suddenly, the angel of the Lord calls out from heaven, 'Abraham! Abraham!' 'Here I am,' you reply, knife still raised. 'Do not lay a hand on the boy,' the angel says. 'Do not do anything to him. Now I know that you fear God, because you have not withheld from me your son, your only son.'",
+      "soundEffect": "divine_voice",
+      "next": "ram_provided"
+    },
+    {
+      "id": "ram_provided",
+      "text": "Looking up, you see a ram caught by its horns in a thicket. You take the ram and sacrifice it as a burnt offering instead of your son. With overwhelming relief and gratitude, you name the place 'The Lord Will Provide.'",
+      "asciiArt": "ram_thicket",
+      "next": "covenant_confirmed"
+    },
+    {
+      "id": "covenant_confirmed",
+      "text": "The angel of the Lord calls to you again: 'Because you have done this and have not withheld your son, I will surely bless you and make your descendants as numerous as the stars in the sky and as the sand on the seashore. Through your offspring all nations on earth will be blessed, because you have obeyed me.'",
+      "asciiArt": "covenant_blessing",
+      "soundEffect": "heavenly_chorus",
+      "next": "return_journey"
+    },
+    {
+      "id": "return_journey",
+      "text": "With Isaac safe and God's covenant reaffirmed, you return to your servants, and together you set off for Beersheba, where you settled and lived for many years.",
+      "next": "abrahams_legacy"
+    },
+    {
+      "id": "abrahams_legacy",
+      "text": "Your journey of faith becomes the cornerstone of three great world religions. You are remembered as the friend of God, the father of faith, and an example of unwavering trust in divine promises, even when they seemed impossible.",
+      "next": "conclusion"
+    },
+    {
+      "id": "conclusion",
+      "text": "Abraham lived to the age of 175, witnessing the beginning of God's promises fulfilled through Isaac and his descendants. His legacy of faith continues to inspire countless believers to trust God's promises and follow His commands, even when the path ahead is uncertain.",
+      "next": "end"
+    }
+  ],
+  "teaching": {
+    "mainLesson": "Faith that leads to obedience, even when God's commands are difficult or don't make immediate sense.",
+    "secondaryLessons": [
+      "God's promises may take time to fulfill, but He is always faithful.",
+      "Sometimes God tests our faith to strengthen it and reveal our true priorities.",
+      "True worship involves sacrifice and surrender.",
+      "God often provides in unexpected ways at just the right moment.",
+      "Our obedience can result in blessings that extend to future generations."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "Genesis 12:1-2",
+        "text": "The Lord had said to Abram, 'Go from your country, your people and your father's household to the land I will show you. I will make you into a great nation, and I will bless you; I will make your name great, and you will be a blessing.'"
+      },
+      {
+        "reference": "Genesis 15:6",
+        "text": "Abram believed the Lord, and he credited it to him as righteousness."
+      },
+      {
+        "reference": "Genesis 22:14",
+        "text": "So Abraham called that place The Lord Will Provide. And to this day it is said, 'On the mountain of the Lord it will be provided.'"
+      },
+      {
+        "reference": "Hebrews 11:8-9",
+        "text": "By faith Abraham, when called to go to a place he would later receive as his inheritance, obeyed and went, even though he did not know where he was going. By faith he made his home in the promised land like a stranger in a foreign country."
+      },
+      {
+        "reference": "James 2:21-22",
+        "text": "Was not our father Abraham considered righteous for what he did when he offered his son Isaac on the altar? You see that his faith and his actions were working together, and his faith was made complete by what he did."
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "question": "How old was Abraham when Isaac was born?",
+      "options": [
+        "75 years old",
+        "86 years old",
+        "99 years old",
+        "100 years old"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Abraham was 100 years old when Isaac, the son of promise, was born to him and Sarah."
+    },
+    {
+      "question": "What was Abraham's name before God changed it?",
+      "options": [
+        "Abram",
+        "Avram",
+        "Aviram",
+        "Adam"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Before God changed his name, Abraham was called Abram, which means 'exalted father.' Abraham means 'father of many nations.'"
+    },
+    {
+      "question": "Who was Abraham's nephew who traveled with him to Canaan?",
+      "options": [
+        "Eliezer",
+        "Lot",
+        "Ishmael",
+        "Laban"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Lot was Abraham's nephew who accompanied him on his journey to Canaan but later separated from him due to their growing herds."
+    },
+    {
+      "question": "What did Abraham see caught in the thicket that became the sacrifice instead of Isaac?",
+      "options": [
+        "A sheep",
+        "A goat",
+        "A ram",
+        "A bull"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Abraham saw a ram caught by its horns in a thicket, which he sacrificed instead of Isaac."
+    },
+    {
+      "question": "What was the name of Abraham's first son, born to Hagar?",
+      "options": [
+        "Isaac",
+        "Ishmael",
+        "Israel",
+        "Iman"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ishmael was Abraham's first son, born to Hagar, Sarah's Egyptian servant."
+    },
+    {
+      "question": "What mountain did God tell Abraham to take Isaac to for sacrifice?",
+      "options": [
+        "Mount Sinai",
+        "Mount Carmel",
+        "Mount Moriah",
+        "Mount Ararat"
+      ],
+      "correctAnswer": 2,
+      "explanation": "God commanded Abraham to take Isaac to the region of Moriah and sacrifice him on one of the mountains there."
+    }
+  ],
+  "asciiArtReferences": {
+    "abraham_intro": "ascii_abraham_intro.txt",
+    "god_speaks_abraham": "ascii_god_speaks_abraham.txt",
+    "abraham_caravan": "ascii_abraham_caravan.txt",
+    "canaan_landscape": "ascii_canaan_landscape.txt",
+    "pharaoh_palace": "ascii_pharaoh_palace.txt",
+    "lot_separation": "ascii_lot_separation.txt",
+    "promised_land": "ascii_promised_land.txt",
+    "covenant_ceremony": "ascii_covenant_ceremony.txt",
+    "ishmael_birth": "ascii_ishmael_birth.txt",
+    "three_visitors": "ascii_three_visitors.txt",
+    "isaac_birth": "ascii_isaac_birth.txt",
+    "hagar_wilderness": "ascii_hagar_wilderness.txt",
+    "journey_to_moriah": "ascii_journey_to_moriah.txt",
+    "isaac_on_altar": "ascii_isaac_on_altar.txt",
+    "abraham_knife": "ascii_abraham_knife.txt",
+    "ram_thicket": "ascii_ram_thicket.txt",
+    "covenant_blessing": "ascii_covenant_blessing.txt"
+  }
+}
+

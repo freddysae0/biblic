@@ -1,0 +1,193 @@
+{
+  "id": "moses",
+  "title": "Moses: Deliverer of Israel",
+  "shortDescription": "The extraordinary journey of a man who led the Israelites from slavery in Egypt to freedom and received God's law on Mount Sinai.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In Egypt, the descendants of Jacob (Israel) had multiplied greatly, but a new Pharaoh who did not know Joseph came to power. Fearing the Israelites' numbers, he enslaved them and ordered all newborn Hebrew boys to be killed.",
+      "next": "baby_moses"
+    },
+    {
+      "id": "baby_moses",
+      "text": "A Levite woman gives birth to a son and hides him for three months. When she can no longer hide him, she places him in a basket and sets it afloat on the Nile.",
+      "asciiArt": "moses_basket",
+      "next": "pharaoh_daughter"
+    },
+    {
+      "id": "pharaoh_daughter",
+      "text": "Pharaoh’s daughter finds the basket and has compassion on the baby. She names him Moses, saying, 'I drew him out of the water.' He is raised in the palace, but he never forgets his Hebrew identity.",
+      "next": "moses_flees"
+    },
+    {
+      "id": "moses_flees",
+      "text": "One day, Moses sees an Egyptian beating a Hebrew slave and kills the Egyptian. When Pharaoh hears of it, Moses flees to the land of Midian. There, he marries Zipporah and becomes a shepherd.",
+      "next": "burning_bush"
+    },
+    {
+      "id": "burning_bush",
+      "text": "While tending his flock near Mount Horeb, Moses sees a bush that is on fire but not consumed. God speaks to him from the bush, calling him to lead His people out of Egypt.",
+      "choices": [
+        {
+          "text": "\"Who am I that I should go to Pharaoh?\"",
+          "next": "god_assures_moses",
+          "effect": { "humility": 5, "faith": 5 }
+        },
+        {
+          "text": "\"What if they don’t believe me?\"",
+          "next": "signs_given",
+          "effect": { "faith": 3, "wisdom": 5 }
+        },
+        {
+          "text": "\"Please send someone else.\"",
+          "next": "god_angers",
+          "effect": { "faith": -2, "obedience": -3 }
+        }
+      ]
+    },
+    {
+      "id": "god_assures_moses",
+      "text": "God responds, 'I will be with you.' He reveals His name: 'I AM WHO I AM.' Moses receives the assurance that God will go with him.",
+      "next": "return_to_egypt"
+    },
+    {
+      "id": "signs_given",
+      "text": "God gives Moses signs to perform: turning his staff into a snake and his hand becoming leprous and healed. These will convince the Israelites and Pharaoh of God’s power.",
+      "next": "return_to_egypt"
+    },
+    {
+      "id": "god_angers",
+      "text": "God becomes angry but appoints Aaron, Moses’ brother, to speak on his behalf. Despite Moses’ reluctance, he agrees to go.",
+      "next": "return_to_egypt"
+    },
+    {
+      "id": "return_to_egypt",
+      "text": "Moses returns to Egypt with his family. He and Aaron confront Pharaoh, declaring, 'Let my people go!' But Pharaoh’s heart is hardened.",
+      "next": "plagues"
+    },
+    {
+      "id": "plagues",
+      "text": "Ten plagues strike Egypt—from water turning to blood, to frogs, locusts, darkness, and finally, the death of the firstborn. Pharaoh finally agrees to let the Israelites go.",
+      "asciiArt": "plague_scene",
+      "soundEffect": "plague_storm",
+      "next": "exodus_begins"
+    },
+    {
+      "id": "exodus_begins",
+      "text": "The Israelites leave Egypt in haste. God leads them with a pillar of cloud by day and fire by night. But Pharaoh changes his mind and pursues them with his army.",
+      "next": "red_sea"
+    },
+    {
+      "id": "red_sea",
+      "text": "With the Red Sea before them and Pharaoh’s army behind, the people panic. Moses stretches out his staff, and God parts the sea. The Israelites walk through on dry ground.",
+      "asciiArt": "red_sea_split",
+      "soundEffect": "sea_parting",
+      "next": "egyptians_drown"
+    },
+    {
+      "id": "egyptians_drown",
+      "text": "As the Egyptians pursue them into the sea, the waters return, drowning Pharaoh’s army. The people are safe, and they sing a song of victory to the Lord.",
+      "next": "mount_sinai"
+    },
+    {
+      "id": "mount_sinai",
+      "text": "At Mount Sinai, God gives the Ten Commandments to Moses. The mountain shakes, and God’s presence is like fire and thunder. The covenant is established.",
+      "next": "conclusion"
+    },
+    {
+      "id": "conclusion",
+      "text": "Through faith, obedience, and God’s mighty power, Moses leads the Israelites out of slavery. Though the journey is long and filled with trials, God is faithful to His promises. Moses’ legacy lives on as a prophet, leader, and servant of God.",
+      "asciiArt": "moses_tablets",
+      "next": "end"
+    }
+  ],
+  "challenges": [
+    {
+      "question": "What did God say to Moses from the burning bush?",
+      "options": [
+        "Run away and hide from Pharaoh",
+        "Go and set My people free",
+        "Offer sacrifices to please Me",
+        "Build an altar in the desert"
+      ],
+      "correctAnswer": 1,
+      "explanation": "From the burning bush, God called Moses to go to Pharaoh and bring the Israelites out of Egypt (Exodus 3:10)."
+    },
+    {
+      "question": "Why did Moses hesitate to accept God’s mission?",
+      "options": [
+        "He was afraid of the Egyptians",
+        "He was too old",
+        "He felt he was not a good speaker",
+        "He wanted to stay in Midian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Moses told God he was 'slow of speech and tongue,' expressing his fear about not being an effective speaker (Exodus 4:10)."
+    },
+    {
+      "question": "What did God use to convince Moses to trust Him?",
+      "options": [
+        "An earthquake",
+        "A vision of heaven",
+        "Miraculous signs like the staff turning into a snake",
+        "Sending an angel"
+      ],
+      "correctAnswer": 2,
+      "explanation": "God gave Moses signs, such as his staff turning into a snake and his hand becoming leprous, to prove His power (Exodus 4:1–8)."
+    },
+    {
+      "question": "How did God guide the Israelites through the wilderness?",
+      "options": [
+        "By the stars at night",
+        "With a map given to Moses",
+        "Through the voice of angels",
+        "With a pillar of cloud by day and fire by night"
+      ],
+      "correctAnswer": 3,
+      "explanation": "God led His people with a pillar of cloud by day and a pillar of fire by night, showing His constant presence (Exodus 13:21)."
+    },
+    {
+      "question": "What happened at the Red Sea?",
+      "options": [
+        "The Israelites swam across",
+        "Pharaoh made peace with Moses",
+        "God parted the waters so they could cross on dry ground",
+        "They built boats to escape"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When the Israelites were trapped, God parted the Red Sea, allowing them to cross on dry ground and escape Pharaoh’s army (Exodus 14:21–22)."
+    }
+  ],
+  "teaching": {
+    "mainLesson": "God can use ordinary and even reluctant people to do extraordinary things when they trust and obey Him.",
+    "secondaryLessons": [
+      "God equips those He calls, even when they feel unworthy or incapable.",
+      "Faith sometimes means stepping forward even when you cannot see the outcome.",
+      "Obedience opens the path to freedom—for ourselves and others.",
+      "God’s presence guides us daily, just as He guided Israel with a pillar of cloud and fire.",
+      "Receiving God’s commandments shows us how to live in relationship with Him and with others."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "Exodus 3:11",
+        "text": "But Moses said to God, 'Who am I that I should go to Pharaoh and bring the Israelites out of Egypt?'"
+      },
+      {
+        "reference": "Exodus 4:12",
+        "text": "Now go; I will help you speak and will teach you what to say."
+      },
+      {
+        "reference": "Exodus 13:21",
+        "text": "By day the Lord went ahead of them in a pillar of cloud to guide them on their way and by night in a pillar of fire to give them light."
+      },
+      {
+        "reference": "Exodus 20:1-3",
+        "text": "And God spoke all these words: 'I am the Lord your God… You shall have no other gods before me.'"
+      },
+      {
+        "reference": "Hebrews 11:27",
+        "text": "By faith he left Egypt, not fearing the king’s anger; he persevered because he saw him who is invisible."
+      }
+    ]
+  }
+}
