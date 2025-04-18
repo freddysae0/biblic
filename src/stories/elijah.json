@@ -1,0 +1,372 @@
+{
+  "id": "elijah",
+  "title": "Elijah: Prophet of Fire",
+  "shortDescription": "The dramatic story of Elijah, a mighty prophet who stood against idolatry, performed miracles, and was ultimately taken to heaven in a whirlwind.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In the time of King Ahab of Israel, idolatry flourished, especially the worship of Baal, promoted by Ahab's wife Jezebel. Into this dark period, God raised up Elijah the Tishbite, a prophet of uncompromising faith from Gilead. His name itself—'My God is Yahweh'—proclaimed his mission.",
+      "asciiArt": "elijah_intro",
+      "next": "drought_pronouncement"
+    },
+    {
+      "id": "drought_pronouncement",
+      "text": "Elijah boldly confronted King Ahab: 'As the LORD, the God of Israel, lives, whom I serve, there will be neither dew nor rain in the next few years except at my word.' With this pronouncement, a great drought began in the land of Israel—divine judgment against the worship of Baal, who was worshipped as a god of fertility and rain.",
+      "asciiArt": "elijah_confronts_ahab",
+      "next": "ravens_feed"
+    },
+    {
+      "id": "ravens_feed",
+      "text": "After delivering God's message, the LORD told Elijah: 'Leave here, turn eastward and hide in the Kerith Ravine, east of the Jordan. You will drink from the brook, and I have directed the ravens to supply you with food there.' So Elijah obeyed and went to the Kerith Ravine. The ravens brought him bread and meat in the morning and bread and meat in the evening, and he drank from the brook.",
+      "asciiArt": "ravens_feeding",
+      "next": "brook_dries"
+    },
+    {
+      "id": "brook_dries",
+      "text": "Some time later the brook dried up because there had been no rain in the land. Then the word of the LORD came to him: 'Go at once to Zarephath in the region of Sidon and stay there. I have directed a widow there to supply you with food.'",
+      "next": "widow_meeting"
+    },
+    {
+      "id": "widow_meeting",
+      "text": "When Elijah arrived at the town gate of Zarephath, he saw a widow gathering sticks. He called to her and asked, 'Would you bring me a little water in a jar so I may have a drink?' As she was going to get it, he called, 'And bring me, please, a piece of bread.' The woman replied, 'As surely as the LORD your God lives, I don't have any bread—only a handful of flour in a jar and a little olive oil in a jug. I am gathering a few sticks to take home and make a meal for myself and my son, that we may eat it—and die.'",
+      "next": "elijah_request"
+    },
+    {
+      "id": "elijah_request",
+      "text": "The widow has just told you she only has enough food for one last meal before she and her son die of starvation. How do you respond?",
+      "choices": [
+        {
+          "text": "Ask her to feed you first, promising God will provide",
+          "next": "request_food_first",
+          "effect": { "faith": 15, "compassion": -5 }
+        },
+        {
+          "text": "Offer to share what little she has with her",
+          "next": "offer_to_share",
+          "effect": { "compassion": 15, "obedience": -5 }
+        },
+        {
+          "text": "Find another source of food and return to help her",
+          "next": "find_other_food",
+          "effect": { "resourcefulness": 10, "faith": -10 }
+        }
+      ]
+    },
+    {
+      "id": "request_food_first",
+      "text": "Elijah said to her, 'Don't be afraid. Go home and do as you have said. But first make a small loaf of bread for me from what you have and bring it to me, and then make something for yourself and your son. For this is what the LORD, the God of Israel, says: 'The jar of flour will not be used up and the jug of oil will not run dry until the day the LORD sends rain on the land.''",
+      "next": "widow_obeys"
+    },
+    {
+      "id": "offer_to_share",
+      "text": "You offer to share what little she has. However, guided by divine wisdom, you recognize God is using this situation to demonstrate His provision. You say, 'Don't be afraid. Go home and do as you have said. But first make a small loaf of bread for me from what you have and bring it to me, and then make something for yourself and your son. For this is what the LORD, the God of Israel, says: 'The jar of flour will not be used up and the jug of oil will not run dry until the day the LORD sends rain on the land.''",
+      "next": "widow_obeys"
+    },
+    {
+      "id": "find_other_food",
+      "text": "You consider finding another source of food, but you realize this goes against God's specific direction to go to this widow. Trusting in divine wisdom, you say, 'Don't be afraid. Go home and do as you have said. But first make a small loaf of bread for me from what you have and bring it to me, and then make something for yourself and your son. For this is what the LORD, the God of Israel, says: 'The jar of flour will not be used up and the jug of oil will not run dry until the day the LORD sends rain on the land.''",
+      "next": "widow_obeys"
+    },
+    {
+      "id": "widow_obeys",
+      "text": "She went away and did as Elijah had told her. So there was food every day for Elijah and for the woman and her family. For the jar of flour was not used up and the jug of oil did not run dry, in keeping with the word of the LORD spoken by Elijah. Elijah stayed with the widow and her son, and God's miraculous provision sustained them through the drought.",
+      "asciiArt": "widow_provision",
+      "next": "son_dies"
+    },
+    {
+      "id": "son_dies",
+      "text": "Some time later the son of the woman who owned the house became ill. He grew worse and worse, and finally stopped breathing. She said to Elijah, 'What do you have against me, man of God? Did you come to remind me of my sin and kill my son?' The widow is distraught, blaming you for her son's death.",
+      "next": "elijah_response_death"
+    },
+    {
+      "id": "elijah_response_death",
+      "text": "How do you respond to the widow's accusation?",
+      "choices": [
+        {
+          "text": "Take the child and pray for his resurrection",
+          "next": "pray_for_resurrection",
+          "effect": { "faith": 20, "compassion": 15 }
+        },
+        {
+          "text": "Explain that you didn't cause the child's death",
+          "next": "defend_yourself",
+          "effect": { "pride": 10, "faith": -5 }
+        },
+        {
+          "text": "Ask God why this tragedy has happened",
+          "next": "question_god",
+          "effect": { "understanding": 5, "faith": 5 }
+        }
+      ]
+    },
+    {
+      "id": "defend_yourself",
+      "text": "You begin to defend yourself, but seeing the mother's grief, you realize explanations are hollow. Instead, you turn to action and faith, asking, 'Give me your son.' You take him from her arms, determined to seek God's intervention.",
+      "next": "pray_for_resurrection"
+    },
+    {
+      "id": "question_god",
+      "text": "Your heart heavy with questions, you take the boy from his mother's arms. As you carry him upstairs, you cry out to God, seeking understanding. But you know that more than answers, this situation needs divine power.",
+      "next": "pray_for_resurrection"
+    },
+    {
+      "id": "pray_for_resurrection",
+      "text": "Elijah took the boy's body and carried him up to the room where he was staying, and laid him on his bed. Then he cried out to the LORD, 'LORD my God, have you brought tragedy even on this widow I am staying with, by causing her son to die?' Then he stretched himself out on the boy three times and cried out to the LORD, 'LORD my God, let this boy's life return to him!'",
+      "next": "boy_revives"
+    },
+    {
+      "id": "boy_revives",
+      "text": "The LORD heard Elijah's cry, and the boy's life returned to him, and he lived. Elijah picked up the child and carried him down from the room into the house. He gave him to his mother and said, 'Look, your son is alive!' Then the woman said to Elijah, 'Now I know that you are a man of God and that the word of the LORD from your mouth is the truth.'",
+      "asciiArt": "boy_resurrection",
+      "next": "confront_ahab"
+    },
+    {
+      "id": "confront_ahab",
+      "text": "After a long time, in the third year of the drought, the word of the LORD came to Elijah: 'Go and present yourself to Ahab, and I will send rain on the land.' So Elijah went to present himself to Ahab. Now the famine was severe in Samaria, and Ahab summoned Obadiah, his palace administrator who was a devout believer in the LORD.",
+      "next": "meeting_obadiah"
+    },
+    {
+      "id": "meeting_obadiah",
+      "text": "While Obadiah was on his way, Elijah met him. Obadiah recognized him, bowed down to the ground, and said, 'Is it really you, my lord Elijah?' 'Yes,' he replied. 'Go tell your master, 'Elijah is here.'' Obadiah was afraid Elijah would disappear and Ahab would kill him, but Elijah assured him he would meet with Ahab that day.",
+      "next": "ahab_confrontation"
+    },
+    {
+      "id": "ahab_confrontation",
+      "text": "When Ahab saw Elijah, he said to him, 'Is that you, you troubler of Israel?' Elijah replied, 'I have not made trouble for Israel. But you and your father's family have. You have abandoned the LORD's commands and have followed the Baals. Now summon the people from all over Israel to meet me on Mount Carmel. And bring the four hundred and fifty prophets of Baal and the four hundred prophets of Asherah, who eat at Jezebel's table.'",
+      "asciiArt": "ahab_elijah_meeting",
+      "next": "mount_carmel"
+    },
+    {
+      "id": "mount_carmel",
+      "text": "Ahab summoned all the Israelites and gathered the prophets on Mount Carmel. Elijah stood before the people and said, 'How long will you waver between two opinions? If the LORD is God, follow him; but if Baal is God, follow him.' But the people said nothing. Then Elijah proposed a contest: each side would prepare a bull for sacrifice, but not light the fire. The God who answered by fire would be proven the true God.",
+      "next": "contest_setup"
+    },
+    {
+      "id": "contest_setup",
+      "text": "The prophets of Baal went first. They prepared their bull and called on Baal from morning till noon, shouting and dancing around the altar they had made. But there was no response. At noon Elijah began to taunt them: 'Shout louder! Surely he is a god! Perhaps he is deep in thought, or busy, or traveling. Maybe he is sleeping and must be awakened.' They shouted louder and slashed themselves with swords and spears until their blood flowed, but still there was no response.",
+      "next": "elijah_turn"
+    },
+    {
+      "id": "elijah_turn",
+      "text": "It's now your turn to call on God. How will you prepare?",
+      "choices": [
+        {
+          "text": "Repair the altar and dig a trench around it",
+          "next": "elijah_prepares_altar",
+          "effect": { "thoroughness": 15, "faith": 10 }
+        },
+        {
+          "text": "Pray privately before proceeding with the public demonstration",
+          "next": "elijah_prays_first",
+          "effect": { "humility": 15, "wisdom": 10 }
+        },
+        {
+          "text": "Call the people closer to witness God's power",
+          "next": "elijah_gathers_witnesses",
+          "effect": { "boldness": 15, "leadership": 10 }
+        }
+      ]
+    },
+    {
+      "id": "elijah_prays_first",
+      "text": "You take a moment to commune with God in prayer, seeking His presence and guidance. Then, filled with divine confidence, you proceed to repair the altar of the LORD, which had been torn down.",
+      "next": "elijah_prepares_altar"
+    },
+    {
+      "id": "elijah_gathers_witnesses",
+      "text": "You call the people to come closer: 'Approach me, that you may witness the power of the living God.' Then, with all eyes upon you, you begin to repair the broken altar of the LORD.",
+      "next": "elijah_prepares_altar"
+    },
+    {
+      "id": "elijah_prepares_altar",
+      "text": "Elijah took twelve stones, one for each of the tribes of Israel, and built an altar in the name of the LORD. He dug a trench around it large enough to hold about thirteen quarts of seed. He arranged the wood, cut the bull into pieces and laid it on the wood. Then he said, 'Fill four large jars with water and pour it on the offering and on the wood.' He had them do it three times until the water ran down around the altar and filled the trench.",
+      "asciiArt": "elijah_altar",
+      "next": "elijah_prays"
+    },
+    {
+      "id": "elijah_prays",
+      "text": "At the time of sacrifice, Elijah stepped forward and prayed: 'LORD, the God of Abraham, Isaac and Israel, let it be known today that you are God in Israel and that I am your servant and have done all these things at your command. Answer me, LORD, answer me, so these people will know that you, LORD, are God, and that you are turning their hearts back again.'",
+      "next": "fire_falls"
+    },
+    {
+      "id": "fire_falls",
+      "text": "Then the fire of the LORD fell and burned up the sacrifice, the wood, the stones and the soil, and also licked up the water in the trench. When all the people saw this, they fell prostrate and cried, 'The LORD—he is God! The LORD—he is God!'",
+      "asciiArt": "fire_from_heaven",
+      "soundEffect": "divine_fire",
+      "next": "prophets_baal"
+    },
+    {
+      "id": "prophets_baal",
+      "text": "Elijah commanded the people: 'Seize the prophets of Baal. Don’t let anyone get away!' They seized them, and Elijah had them brought down to the Kishon Valley and executed according to the LORD’s judgment.",
+      "asciiArt": "prophets_baal_execution",
+      "next": "prayer_for_rain"
+    },
+    {
+      "id": "prayer_for_rain",
+      "text": "Then Elijah said to Ahab, 'Go up, eat and drink, for there is the sound of a heavy rain.' Ahab went up to eat and drink, but Elijah climbed to the top of Mount Carmel. There he bowed down on the ground and put his face between his knees.",
+      "next": "rain_comes"
+    },
+    {
+      "id": "rain_comes",
+      "text": "He said to his servant, 'Go and look toward the sea.' The servant went and looked, then returned saying, 'There is nothing.' Seven times Elijah said, 'Go back.' On the seventh time, the servant reported, 'A cloud as small as a man’s hand is rising from the sea.' Elijah declared, 'Hitch up your chariot and go down before the rain stops you.' Soon the sky darkened, the wind rose, a heavy rain fell, and Ahab rode off to Jezreel.",
+      "asciiArt": "rain_falling",
+      "next": "elijah_taken_up"
+    },
+    {
+      "id": "elijah_taken_up",
+      "text": "As they continued walking and talking, a chariot of fire and horses of fire appeared and separated Elijah from Elisha, and Elijah was taken up to heaven in a whirlwind. Elisha cried out, 'My father! My father! The chariots of Israel and its horsemen!' But Elijah was gone. Elisha picked up Elijah’s cloak that had fallen and returned to the bank of the Jordan, striking the water with it until it parted.",
+      "asciiArt": "elijah_whirlwind",
+      "next": "post_whirlwind"
+    },
+    {
+      "id": "post_whirlwind",
+      "text": "Alone on the windswept banks, Elisha stood holding the heavy mantle of fire. The still air seemed charged with divine electricity. He felt the weight of the prophetic office settling upon him—and the promise that the spirit of Elijah now rested within.",
+      "asciiArt": "elisha_mantle",
+      "next": "cloak_parting"
+    },
+    {
+      "id": "cloak_parting",
+      "text": "Elisha rolled up the cloak and struck the waters of the Jordan. They parted at his command, forming two towering walls of water. He crossed through on dry ground into the waiting ranks of the sons of the prophets, whose eyes shone with awe and fear.",
+      "asciiArt": "jordan_parted",
+      "choices": [
+        {
+          "text": "Call down rain to fill the Jordan once more",
+          "next": "choice_rain",
+          "effect": { "faith": 20, "boldness": 10 }
+        },
+        {
+          "text": "Summon fire to consume a band of marauders threatening the camp",
+          "next": "choice_fire",
+          "effect": { "righteous_anger": 15, "compassion": -5 }
+        },
+        {
+          "text": "Prophesy to the gathered sons, commissioning them to spread the word",
+          "next": "choice_prophesy",
+          "effect": { "leadership": 20, "wisdom": 10 }
+        }
+      ]
+    },
+    {
+      "id": "choice_rain",
+      "text": "Lifting his hands skyward, Elisha cried out for the heavens to open. Clouds gathered, thunder rolled, and torrents of rain turned the riverbed back into a rushing Jordan. The young prophets watched in stunned reverence.",
+      "asciiArt": "rain_return",
+      "next": "legacy_begins"
+    },
+    {
+      "id": "choice_fire",
+      "text": "With a fierce glance, Elisha called on the LORD’s fire. Flames leapt from his cloak, encircling the marauders before dissolving into sparks. The camp was saved without a sword drawn.",
+      "asciiArt": "heavenly_fire",
+      "next": "legacy_begins"
+    },
+    {
+      "id": "choice_prophesy",
+      "text": "Standing on a rock, Elisha raised his voice: 'Hear the word of the LORD! Serve Him faithfully, and He will bless your days.' The prophets knelt, tears in their eyes, ready to carry the message to the farthest corners of Israel.",
+      "asciiArt": "prophecy_assembly",
+      "next": "legacy_begins"
+    },
+    {
+      "id": "legacy_begins",
+      "text": "Thus began the long legacy of Elisha, the prophet of double portion. Miracles followed him: waters healed, lepers cleansed, the dead raised, and even the sun’s shadow retreated. Through storm and stillness, famine and feast, his voice proclaimed that the LORD reigns forever.",
+      "asciiArt": "elisha_legacy",
+      "next": null
+    }
+  ],
+  "teaching": {
+    "mainLesson": "God’s sovereignty and power are supreme—He works through bold obedience and persistent prayer to accomplish His purposes and turn hearts back to Him.",
+    "secondaryLessons": [
+      "Bold faith in the face of idolatry invites God’s miraculous intervention.",
+      "God provides for His servants in unexpected and supernatural ways.",
+      "Persistent, faith‑filled prayer can bring about extraordinary outcomes.",
+      "Confronting spiritual falsehoods may require courage but leads people back to the true God.",
+      "Trusting God above earthly powers brings lasting transformation."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "1 Kings 18:21",
+        "text": "Elijah came near to all the people and said, 'How long will you go limping between two different opinions? If the Lord is God, follow him; but if Baal, then follow him.'"
+      },
+      {
+        "reference": "James 5:17‑18",
+        "text": "Elijah was a human being, even as we are. He prayed earnestly that it would not rain, and it did not rain on the land for three years and six months. Then he prayed again, and heaven gave rain and the earth bore its fruit."
+      },
+      {
+        "reference": "1 Kings 17:6",
+        "text": "The ravens brought him bread and meat in the morning, and bread and meat in the evening; and he drank from the brook."
+      },
+      {
+        "reference": "1 Kings 18:41",
+        "text": "And Elijah said to Ahab, 'Go, eat and drink, for there is the sound of a heavy rain.' So Ahab went off to eat and drink, but Elijah climbed to the top of Carmel, put his face between his knees and prayed for rain."
+      },
+      {
+        "reference": "Malachi 4:5",
+        "text": "Behold, I will send you Elijah the prophet before the great and awesome day of the Lord comes."
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "question": "What did Elijah announce to King Ahab that brought a drought on Israel?",
+      "options": [
+        "That Baal priests would be banished",
+        "That there would be no dew or rain until he said so",
+        "That a child would be born to Jezebel",
+        "That the Nile River would turn to blood"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Elijah declared, 'There will be neither dew nor rain in the next few years except at my word,' bringing a divinely‑sent drought as judgment on Baal worship."
+    },
+    {
+      "question": "Who provided food to Elijah while he hid by the brook at Kerith Ravine?",
+      "options": [
+        "Angels",
+        "A widow in Zarephath",
+        "Ravens",
+        "The priests of Baal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "God commanded ravens to bring Elijah bread and meat in the morning and evening while he drank from the brook."
+    },
+    {
+      "question": "Where did Elijah go after the brook dried up?",
+      "options": ["Mount Carmel", "Jerusalem", "Zarephath in Sidon", "Samaria"],
+      "correctAnswer": 2,
+      "explanation": "When the brook dried up, God directed Elijah to go to Zarephath in Sidon, where a widow would provide for him."
+    },
+    {
+      "question": "How many prophets of Baal did Elijah challenge on Mount Carmel?",
+      "options": ["100", "200", "450", "850"],
+      "correctAnswer": 2,
+      "explanation": "Elijah faced 450 prophets of Baal (and 400 prophets of Asherah) in the contest that displayed God’s power by fire."
+    },
+    {
+      "question": "What sign did Elijah’s servant see that foretold the end of the drought?",
+      "options": [
+        "A rainbow in the sky",
+        "Dark clouds gathering",
+        "A small cloud like a man’s hand rising from the sea",
+        "Thunder and lightning"
+      ],
+      "correctAnswer": 2,
+      "explanation": "On the seventh check, the servant reported seeing 'a cloud as small as a man’s hand rising from the sea,' and soon heavy rain followed."
+    }
+  ],
+  "asciiArtReferences": {
+    "elijah_intro": "elijah_intro.txt",
+    "elijah_confronts_ahab": "elijah_confronts_ahab.txt",
+    "ravens_feeding": "ravens_feeding.txt",
+    "widow_provision": "widow_provision.txt",
+    "boy_resurrection": "boy_resurrection.txt",
+    "ahab_elijah_meeting": "ahab_elijah_meeting.txt",
+    "elijah_altar": "elijah_altar.txt",
+    "fire_from_heaven": "fire_from_heaven.txt",
+    "prophets_baal_execution": "prophets_baal_execution.txt",
+    "rain_falling": "rain_falling.txt",
+    "elijah_whirlwind": "elijah_whirlwind.txt",
+    "elisha_mantle": "elisha_mantle.txt",
+    "jordan_parted": "jordan_parted.txt",
+    "rain_return": "rain_return.txt",
+    "heavenly_fire": "heavenly_fire.txt",
+    "prophecy_assembly": "prophecy_assembly.txt",
+    "elisha_legacy": "elisha_legacy.txt"
+  }
+}

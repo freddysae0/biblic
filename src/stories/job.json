@@ -1,0 +1,399 @@
+{
+  "id": "job",
+  "title": "Job: Faith Through Suffering",
+  "shortDescription": "The remarkable story of a righteous man who maintained his faith in God despite losing everything and enduring immense suffering.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In the land of Uz lived a man named Job. He was blameless and upright; he feared God and shunned evil. Job had seven sons and three daughters, and owned seven thousand sheep, three thousand camels, five hundred yoke of oxen, five hundred donkeys, and many servants. He was the greatest man among all the people of the East.",
+      "asciiArt": "job_prosperity",
+      "next": "heavenly_scene"
+    },
+    {
+      "id": "heavenly_scene",
+      "text": "One day the angels came to present themselves before the LORD, and Satan also came with them. The LORD said to Satan, 'Have you considered my servant Job? There is no one on earth like him; he is blameless and upright, a man who fears God and shuns evil.' Satan replied, 'Does Job fear God for nothing? Have you not put a hedge around him? Strike everything he has, and he will surely curse you to your face.'",
+      "asciiArt": "heavenly_court",
+      "soundEffect": "divine_voice",
+      "next": "first_test"
+    },
+    {
+      "id": "first_test",
+      "text": "The LORD said to Satan, 'Very well, then, everything he has is in your power, but on the man himself do not lay a finger.' Soon after, messengers arrive at Job's home, one after another, with devastating news.",
+      "next": "messengers_arrive"
+    },
+    {
+      "id": "messengers_arrive",
+      "text": "The first messenger reports: 'The oxen were plowing and the donkeys were grazing nearby, and the Sabeans attacked and took them. They put the servants to the sword, and I am the only one who has escaped to tell you!' While he was still speaking, another messenger arrives with more tragic news.",
+      "next": "more_bad_news"
+    },
+    {
+      "id": "more_bad_news",
+      "text": "More messengers arrive in quick succession: 'The fire of God fell from the heavens and burned up the sheep and the servants!' 'The Chaldeans formed three raiding parties and swept down on your camels and took them!' And finally, the most devastating news of all...",
+      "next": "children_killed"
+    },
+    {
+      "id": "children_killed",
+      "text": "The last messenger reports: 'Your sons and daughters were feasting at the oldest brother's house, when suddenly a mighty wind swept in from the desert and struck the four corners of the house. It collapsed on them and they are all dead, and I am the only one who has escaped to tell you!'",
+      "asciiArt": "job_receives_news",
+      "next": "jobs_response"
+    },
+    {
+      "id": "jobs_response",
+      "text": "In the face of these devastating losses, you must now respond. What will you do?",
+      "choices": [
+        {
+          "text": "Fall to the ground in worship, accepting God's will",
+          "next": "job_worships",
+          "effect": {"faith": 15, "perseverance": 10}
+        },
+        {
+          "text": "Question why God would allow this to happen",
+          "next": "job_questions",
+          "effect": {"understanding": 5, "faith": -5}
+        },
+        {
+          "text": "Curse God for allowing such tragedy",
+          "next": "job_curses",
+          "effect": {"faith": -15, "bitterness": 15}
+        }
+      ]
+    },
+    {
+      "id": "job_worships",
+      "text": "Job fell to the ground in worship and said: 'Naked I came from my mother's womb, and naked I will depart. The LORD gave and the LORD has taken away; may the name of the LORD be praised.' In all this, Job did not sin by charging God with wrongdoing.",
+      "next": "second_test"
+    },
+    {
+      "id": "job_questions",
+      "text": "Though you question why God would allow such tragedy, you ultimately refuse to curse Him. Instead, you say, 'The LORD gave and the LORD has taken away; may the name of the LORD be praised.' In all this, you did not sin by charging God with wrongdoing.",
+      "next": "second_test"
+    },
+    {
+      "id": "job_curses",
+      "text": "Though you initially feel like cursing God, something stops you. Instead, with a heart full of grief but still clinging to faith, you say, 'The LORD gave and the LORD has taken away; may the name of the LORD be praised.' In all this, you did not sin by charging God with wrongdoing.",
+      "next": "second_test"
+    },
+    {
+      "id": "second_test",
+      "text": "Again the angels came to present themselves before the LORD, and Satan came with them. The LORD said to Satan, 'Have you considered my servant Job? He still maintains his integrity, though you incited me against him to ruin him without any reason.' Satan replied, 'Skin for skin! A man will give all he has for his own life. But now stretch out your hand and strike his flesh and bones, and he will surely curse you to your face.'",
+      "asciiArt": "heavenly_court_second",
+      "next": "physical_affliction"
+    },
+    {
+      "id": "physical_affliction",
+      "text": "The LORD said to Satan, 'Very well, then, he is in your hands; but you must spare his life.' Satan went out and afflicted Job with painful sores from the soles of his feet to the crown of his head. Job took a piece of broken pottery and scraped himself with it as he sat among the ashes.",
+      "asciiArt": "job_suffering",
+      "next": "wife_speaks"
+    },
+    {
+      "id": "wife_speaks",
+      "text": "Your wife says to you, 'Are you still maintaining your integrity? Curse God and die!' How do you respond to your wife?",
+      "choices": [
+        {
+          "text": "Rebuke her gently for speaking as a foolish person would",
+          "next": "job_rebukes_wife",
+          "effect": {"wisdom": 10, "patience": 5}
+        },
+        {
+          "text": "Explain that we must accept both good and trouble from God",
+          "next": "job_accepts_both",
+          "effect": {"faith": 15, "understanding": 10}
+        },
+        {
+          "text": "Remain silent, unwilling to respond in your pain",
+          "next": "job_silent",
+          "effect": {"patience": 15, "communication": -5}
+        }
+      ]
+    },
+    {
+      "id": "job_rebukes_wife",
+      "text": "You replied, 'You are talking like a foolish woman. Shall we accept good from God, and not trouble?' In all this, you did not sin in what you said.",
+      "next": "friends_arrive"
+    },
+    {
+      "id": "job_accepts_both",
+      "text": "You answered, 'Shall we accept good from God, and not trouble?' showing wisdom even in your suffering. In all this, you did not sin in what you said.",
+      "next": "friends_arrive"
+    },
+    {
+      "id": "job_silent",
+      "text": "Though you remain silent to your wife's words, in your heart you refuse to curse God. Your silence speaks of your endurance through suffering. In all this, you did not sin in what you said.",
+      "next": "friends_arrive"
+    },
+    {
+      "id": "friends_arrive",
+      "text": "When Job's three friends, Eliphaz the Temanite, Bildad the Shuhite and Zophar the Naamathite, heard about all the troubles that had come upon him, they set out to visit and comfort him. When they saw him from a distance, they could hardly recognize him; they began to weep aloud and tore their robes and sprinkled dust on their heads. Then they sat on the ground with him for seven days and seven nights. No one said a word to him, because they saw how great his suffering was.",
+      "asciiArt": "job_friends",
+      "next": "job_laments"
+    },
+    {
+      "id": "job_laments",
+      "text": "After this, Job opened his mouth and cursed the day of his birth. He questioned why he was born only to experience such suffering and longed for the peace that death would bring. His friends then began to offer their perspectives.",
+      "next": "eliphaz_speaks"
+    },
+    {
+      "id": "eliphaz_speaks",
+      "text": "Eliphaz suggests that your suffering must be punishment for some sin. He says, 'Who, being innocent, has ever perished? Where were the upright ever destroyed? Those who plow evil and those who sow trouble reap it.' How do you respond?",
+      "choices": [
+        {
+          "text": "Insist on your innocence and question God's justice",
+          "next": "job_questions_justice",
+          "effect": {"honesty": 10, "humility": -5}
+        },
+        {
+          "text": "Express your deep anguish but maintain trust in God",
+          "next": "job_maintains_trust",
+          "effect": {"faith": 15, "perseverance": 10}
+        },
+        {
+          "text": "Ask your friends for more compassion rather than judgment",
+          "next": "job_asks_compassion",
+          "effect": {"wisdom": 10, "relationship": 5}
+        }
+      ]
+    },
+    {
+      "id": "job_questions_justice",
+      "text": "You respond to Eliphaz by questioning why God seems to allow the innocent to suffer. You maintain that you have lived righteously, yet you are experiencing terrible suffering, which challenges your understanding of God's justice.",
+      "next": "bildad_speaks"
+    },
+    {
+      "id": "job_maintains_trust",
+      "text": "Despite your deep pain, you express that though God might slay you, still you will hope in Him. Your suffering is real and your questions legitimate, but underneath it all remains a foundation of trust in God's ultimate goodness.",
+      "next": "bildad_speaks"
+    },
+    {
+      "id": "job_asks_compassion",
+      "text": "You rebuke your friends, saying, 'A despairing man should have the devotion of his friends, even though he forsakes the fear of the Almighty.' You wish they had come to comfort, not to judge.",
+      "next": "bildad_speaks"
+    },
+    {
+      "id": "bildad_speaks",
+      "text": "Bildad speaks next, more harshly than Eliphaz. He implies that your children died because of their sins, and that if you were truly pure and upright, God would restore you. He urges you to seek God and plead with Him for mercy.",
+      "next": "job_responds_bildad"
+    },
+    {
+      "id": "job_responds_bildad",
+      "text": "You acknowledge that no one can be righteous before God, yet maintain that suffering is not always related to one's sins. You long to present your case before God, believing He would understand your innocence.",
+      "next": "zophar_speaks"
+    },
+    {
+      "id": "zophar_speaks",
+      "text": "Zophar speaks most harshly of all, claiming that you deserve even worse punishment than you're receiving. He says, 'If you put away the sin that is in your hand and allow no evil to dwell in your tent... then you will lift up your face without shame.' How do you respond to this accusation?",
+      "choices": [
+        {
+          "text": "Defend your integrity and rebuke your friends for their poor comfort",
+          "next": "job_defends_integrity",
+          "effect": {"dignity": 10, "patience": -5}
+        },
+        {
+          "text": "Express your desire to speak directly with God about your case",
+          "next": "job_wants_god",
+          "effect": {"faith": 10, "determination": 15}
+        },
+        {
+          "text": "Acknowledge human limitations in understanding God's ways",
+          "next": "job_acknowledges_limits",
+          "effect": {"wisdom": 15, "humility": 10}
+        }
+      ]
+    },
+    {
+      "id": "job_defends_integrity",
+      "text": "You respond, 'I have become a laughingstock to my friends... Men at ease have contempt for misfortune.' You defend your integrity while noting that your friends have become poor comforters who only add to your suffering.",
+      "next": "multiple_exchanges"
+    },
+    {
+      "id": "job_wants_god",
+      "text": "You declare, 'Oh, that I knew where I might find Him, that I might come to His seat! I would present my case before Him, and fill my mouth with arguments.' Your desire is not to escape judgment but to bring your case directly to God.",
+      "next": "multiple_exchanges"
+    },
+    {
+      "id": "job_acknowledges_limits",
+      "text": "While maintaining your integrity, you acknowledge the limits of human understanding: 'But where can wisdom be found? And where is the place of understanding? Man does not know its value, nor is it found in the land of the living.'",
+      "next": "multiple_exchanges"
+    },
+    {
+      "id": "multiple_exchanges",
+      "text": "The dialogue continues through multiple rounds, with Job's friends becoming increasingly accusatory and Job becoming increasingly frustrated with their poor comfort. Eventually, a young man named Elihu, who had been listening, speaks up, rebuking both Job for justifying himself rather than God, and the three friends for condemning Job without adequate reason.",
+      "next": "god_speaks"
+    },
+    {
+      "id": "god_speaks",
+      "text": "Finally, the LORD answers Job out of the whirlwind. Instead of directly addressing Job's complaints, God asks a series of questions that highlight the vast difference between divine and human wisdom: 'Where were you when I laid the earth's foundation? Who shut up the sea behind doors when it burst forth from the womb? Have you comprehended the vast expanses of the earth?'",
+      "asciiArt": "god_whirlwind",
+      "soundEffect": "whirlwind",
+      "next": "job_humbled"
+    },
+    {
+      "id": "job_humbled",
+      "text": "God's speech continues, revealing His sovereignty over all creation and His infinitely greater perspective. How do you respond to God's words?",
+      "choices": [
+        {
+          "text": "Repent in dust and ashes, recognizing your limited understanding",
+          "next": "job_repents",
+          "effect": {"humility": 15, "wisdom": 15}
+        },
+        {
+          "text": "Ask God to explain why you specifically had to suffer",
+          "next": "job_still_questions",
+          "effect": {"understanding": 5, "submission": -10}
+        },
+        {
+          "text": "Acknowledge God's greatness while maintaining your integrity",
+          "next": "job_both",
+          "effect": {"faith": 10, "integrity": 10}
+        }
+      ]
+    },
+    {
+      "id": "job_repents",
+      "text": "You respond to God: 'I know that you can do all things; no purpose of yours can be thwarted... My ears had heard of you but now my eyes have seen you. Therefore I despise myself and repent in dust and ashes.' Your encounter with God's majesty leads to a profound humility.",
+      "next": "restoration"
+    },
+    {
+      "id": "job_still_questions",
+      "text": "Even after God's speech, you continue to question why you specifically had to suffer. God responds with more questions about His sovereignty, helping you see that some answers are beyond human understanding. Eventually, you bow in submission.",
+      "next": "restoration"
+    },
+    {
+      "id": "job_both",
+      "text": "You acknowledge God's limitless power and wisdom while maintaining that you have lived with integrity. You say, 'I have uttered what I did not understand, things too wonderful for me, which I did not know.' Your honesty combined with reverence pleases God.",
+      "next": "restoration"
+    },
+    {
+      "id": "restoration",
+      "text": "After Job's dialogue with God, the LORD rebukes Job's three friends: 'I am angry with you because you have not spoken the truth about me, as my servant Job has.' He instructs them to offer sacrifices, and Job prays for them.",
+      "next": "prosperity_returns"
+    },
+    {
+      "id": "prosperity_returns",
+      "text": "After Job prayed for his friends, the LORD restored his fortunes and gave him twice as much as he had before. All his brothers and sisters and everyone who had known him before came and ate with him in his house. They comforted and consoled him over all the trouble the LORD had brought on him.",
+      "asciiArt": "job_restored",
+      "next": "new_family"
+    },
+    {
+      "id": "new_family",
+      "text": "The LORD blessed the latter part of Job's life more than the former part. He had fourteen thousand sheep, six thousand camels, a thousand yoke of oxen and a thousand donkeys. And he also had seven sons and three daughters. His daughters were the most beautiful in the land, and Job granted them an inheritance along with their brothers.",
+      "next": "jobs_legacy"
+    },
+    {
+      "id": "jobs_legacy",
+      "text": "After this, Job lived a hundred and forty years; he saw his children and their children to the fourth generation. Full of years, he died, having learned that God's ways are beyond human understanding, but His purposes are ultimately good and His faithfulness endures forever.",
+      "asciiArt": "job_elderly",
+      "next": "end"
+    }
+  ],
+  "teaching": {
+    "mainLesson": "Faith can endure even the most severe trials when it's grounded in trust in God's ultimate goodness and sovereignty.",
+    "secondaryLessons": [
+      "Suffering is not always the result of sin; righteous people may suffer for reasons beyond their understanding.",
+      "Human wisdom is limited; we cannot always understand God's purposes.",
+      "True friends offer comfort, not judgment, during times of suffering.",
+      "God may allow trials but remains present and ultimately brings restoration.",
+      "Direct encounters with God's majesty can transform our perspective on suffering."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "Job 1:21",
+        "text": "Naked I came from my mother's womb, and naked I will depart. The LORD gave and the LORD has taken away; may the name of the LORD be praised."
+      },
+      {
+        "reference": "Job 13:15",
+        "text": "Though he slay me, yet will I hope in him; I will surely defend my ways to his face."
+      },
+      {
+        "reference": "Job 19:25-26",
+        "text": "I know that my redeemer lives, and that in the end he will stand on the earth. And after my skin has been destroyed, yet in my flesh I will see God."
+      },
+      {
+        "reference": "Job 38:4",
+        "text": "Where were you when I laid the earth's foundation? Tell me, if you understand."
+      },
+      {
+        "reference": "Job 42:5-6",
+        "text": "My ears had heard of you but now my eyes have seen you. Therefore I despise myself and repent in dust and ashes."
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "question": "What did Job do after losing his children, possessions, and health?",
+      "options": [
+        "He cursed God and died as his wife suggested",
+        "He maintained his integrity and refused to curse God",
+        "He paid for sacrifices to appease God's anger",
+        "He moved to another land to start over"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Despite his immense suffering, Job maintained his integrity and refused to curse God, though he did question why he was suffering."
+    },
+    {
+      "question": "What was the main argument of Job's three friends?",
+      "options": [
+        "Job should curse God for being unfair",
+        "Job must have sinned to deserve such punishment",
+        "Job should escape his suffering by ending his life",
+        "Job was being tested and should remain faithful"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eliphaz, Bildad, and Zophar all insisted that Job must have committed some sin to deserve his suffering, but they were wrong."
+    },
+    {
+      "question": "How did God respond to Job's questions?",
+      "options": [
+        "By explaining exactly why Job suffered",
+        "By apologizing for allowing him to suffer",
+        "By questioning Job about creation and divine wisdom",
+        "By immediately restoring his health and wealth"
+      ],
+      "correctAnswer": 2,
+      "explanation": "God responded with questions that highlighted His sovereignty and wisdom, demonstrating that His ways are beyond human understanding."
+    },
+    {
+      "question": "What happened to Job's friends after God spoke?",
+      "options": [
+        "They were blessed for their wise counsel",
+        "They were rebuked for not speaking truthfully about God",
+        "They abandoned Job in his time of need",
+        "They became prophets in their own lands"
+      ],
+      "correctAnswer": 1,
+      "explanation": "God rebuked Job's three friends for not speaking truthfully about Him as Job had, and required them to offer sacrifices."
+    },
+    {
+      "question": "How did Job's story end?",
+      "options": [
+        "Job died from his diseases",
+        "Job moved to a distant land alone",
+        "God restored Job's fortunes and gave him twice as much as before",
+        "Job became a prophet to warn others about suffering"
+      ],
+      "correctAnswer": 2,
+      "explanation": "After Job prayed for his friends, God restored his fortunes and gave him twice as much as he had before, plus a new family."
+    },
+    {
+      "question": "What was unique about Job's relationship with his daughters?",
+      "options": [
+        "He refused to speak to them",
+        "He gave them an inheritance along with their brothers",
+        "He sent them to serve in the temple",
+        "He taught them to be silent around men"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Job gave his daughters an inheritance along with their brothers, which was unusual in ancient times when typically only sons inherited property."
+    }
+  ],
+  "asciiArtReferences": {
+    "job_prosperity": "ascii_job_prosperity.txt",
+    "heavenly_court": "ascii_heavenly_court.txt",
+    "job_receives_news": "ascii_job_receives_news.txt",
+    "heavenly_court_second": "ascii_heavenly_court_second.txt",
+    "job_suffering": "ascii_job_suffering.txt",
+    "job_friends": "ascii_job_friends.txt",
+    "god_whirlwind": "ascii_god_whirlwind.txt",
+    "job_restored": "ascii_job_restored.txt",
+    "job_elderly": "ascii_job_elderly.txt"
+  }
+}

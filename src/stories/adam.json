@@ -1,0 +1,267 @@
+{
+  "id": "adam",
+  "title": "Adam: The First Man",
+  "shortDescription": "The story of humanity's creation, life in Eden, the fall into sin, and the consequences that followed for all mankind.",
+  "narrative": [
+    {
+      "id": "intro",
+      "text": "In the beginning, God created the heavens and the earth. After forming light, sky, land, vegetation, and animals, God said, 'Let us make mankind in our image, in our likeness, so that they may rule over all creation.' From the dust of the ground, God formed man and breathed into his nostrils the breath of life.",
+      "asciiArt": "creation_scene",
+      "next": "naming_animals"
+    },
+    {
+      "id": "naming_animals",
+      "text": "God placed the man in the Garden of Eden to work it and take care of it. The LORD God brought all the wild animals and birds to the man to see what he would name them; and whatever the man called each living creature, that was its name. But for Adam no suitable helper was found.",
+      "asciiArt": "eden_garden",
+      "next": "eve_created"
+    },
+    {
+      "id": "eve_created",
+      "text": "So the LORD God caused the man to fall into a deep sleep; and while he was sleeping, He took one of the man's ribs and then closed up the place with flesh. Then the LORD God made a woman from the rib He had taken out of the man, and He brought her to the man. Adam said, 'This is now bone of my bones and flesh of my flesh; she shall be called woman, for she was taken out of man.'",
+      "asciiArt": "eve_creation",
+      "next": "garden_life"
+    },
+    {
+      "id": "garden_life",
+      "text": "Adam and Eve lived in perfect harmony with God and nature in the Garden of Eden. They were naked but felt no shame. God provided them with every tree that is pleasing to the eye and good for food. In the middle of the garden were the tree of life and the tree of the knowledge of good and evil.",
+      "next": "divine_command"
+    },
+    {
+      "id": "divine_command",
+      "text": "The LORD God commanded the man, 'You are free to eat from any tree in the garden; but you must not eat from the tree of the knowledge of good and evil, for when you eat from it you will certainly die.'",
+      "soundEffect": "divine_voice",
+      "next": "serpent_appears"
+    },
+    {
+      "id": "serpent_appears",
+      "text": "Now the serpent was more crafty than any of the wild animals the LORD God had made. He said to the woman, 'Did God really say, 'You must not eat from any tree in the garden'?' The woman replied, 'We may eat fruit from the trees in the garden, but God did say, 'You must not eat fruit from the tree in the middle of the garden, and you must not touch it, or you will die.'",
+      "asciiArt": "serpent_temptation",
+      "next": "serpent_tempts"
+    },
+    {
+      "id": "serpent_tempts",
+      "text": "The serpent said to the woman, 'You will not certainly die. For God knows that when you eat from it your eyes will be opened, and you will be like God, knowing good and evil.' Eve saw that the fruit of the tree was good for food and pleasing to the eye, and also desirable for gaining wisdom.",
+      "next": "eve_decision"
+    },
+    {
+      "id": "eve_decision",
+      "text": "The serpent has tempted Eve with the forbidden fruit. What will she do?",
+      "choices": [
+        {
+          "text": "Take the fruit and eat it, then offer some to Adam",
+          "next": "eve_eats",
+          "effect": { "disobedience": 15, "knowledge": 10, "innocence": -20 }
+        },
+        {
+          "text": "Refuse the serpent and obey God's command",
+          "next": "eve_refuses",
+          "effect": { "obedience": 20, "faith": 15 }
+        },
+        {
+          "text": "Call Adam to help decide what to do",
+          "next": "eve_calls_adam",
+          "effect": { "wisdom": 10, "independence": -10 }
+        }
+      ]
+    },
+    {
+      "id": "eve_refuses",
+      "text": "Though tempted, you remember God's explicit command and refuse the serpent's suggestion. The serpent persists, becoming more persuasive and insistent, playing on your curiosity. Eventually, his deceptive words convince you to reconsider.",
+      "next": "eve_eats"
+    },
+    {
+      "id": "eve_calls_adam",
+      "text": "You call Adam to help with the decision. Together, you listen to the serpent's persuasive argument about becoming wise like God. The serpent's words stir your curiosity and desire for wisdom. After discussing it together, you both reach for the fruit.",
+      "next": "both_eat"
+    },
+    {
+      "id": "eve_eats",
+      "text": "Eve took some and ate it. She also gave some to her husband, who was with her, and he ate it. Then the eyes of both of them were opened, and they realized they were naked; so they sewed fig leaves together and made coverings for themselves.",
+      "asciiArt": "eating_fruit",
+      "next": "hiding_from_god"
+    },
+    {
+      "id": "both_eat",
+      "text": "You both eat the fruit simultaneously. Immediately, the eyes of both of you were opened, and you realized you were naked; you felt shame for the first time and sewed fig leaves together to make coverings for yourselves.",
+      "asciiArt": "eating_fruit",
+      "next": "hiding_from_god"
+    },
+    {
+      "id": "hiding_from_god",
+      "text": "When they heard the sound of the LORD God walking in the garden in the cool of the day, Adam and Eve hid from the LORD God among the trees of the garden. But the LORD God called to the man, 'Where are you?'",
+      "soundEffect": "divine_footsteps",
+      "next": "adam_response"
+    },
+    {
+      "id": "adam_response",
+      "text": "God is calling for you. How do you respond?",
+      "choices": [
+        {
+          "text": "Admit what you've done and accept responsibility",
+          "next": "adam_accepts_responsibility",
+          "effect": { "honesty": 15, "accountability": 10 }
+        },
+        {
+          "text": "Blame Eve for giving you the fruit",
+          "next": "adam_blames_eve",
+          "effect": { "accountability": -10, "relationship": -15 }
+        },
+        {
+          "text": "Remain hidden, hoping God will not find you",
+          "next": "adam_hides",
+          "effect": { "fear": 15, "honesty": -15 }
+        }
+      ]
+    },
+    {
+      "id": "adam_accepts_responsibility",
+      "text": "You step forward, trembling but honest. 'I ate the fruit from the tree You forbade.' Your honesty is noted, but the consequences for disobedience remain. God turns to Eve, who admits being deceived by the serpent.",
+      "next": "consequences"
+    },
+    {
+      "id": "adam_blames_eve",
+      "text": "Adam answered, 'The woman you put here with me—she gave me some fruit from the tree, and I ate it.' Then the LORD God said to the woman, 'What is this you have done?' The woman said, 'The serpent deceived me, and I ate.'",
+      "next": "consequences"
+    },
+    {
+      "id": "adam_hides",
+      "text": "You remain hidden, but God's omniscience finds you. Trembling, you finally admit your presence. 'I heard you in the garden, and I was afraid because I was naked; so I hid.' God asks, 'Who told you that you were naked? Have you eaten from the tree that I commanded you not to eat from?' Unable to deny it, you blame Eve, who blames the serpent.",
+      "next": "consequences"
+    },
+    {
+      "id": "consequences",
+      "text": "God pronounces judgment on the serpent, cursing it above all livestock and wild animals. To Eve, He says that her pains in childbearing will be greatly increased and that her desire will be for her husband, who will rule over her. To Adam, He says that the ground is cursed because of him; through painful toil he will eat food from it all the days of his life, and by the sweat of his brow he will eat his food until he returns to the ground.",
+      "asciiArt": "judgment_scene",
+      "next": "expulsion"
+    },
+    {
+      "id": "expulsion",
+      "text": "The LORD God made garments of skin for Adam and his wife and clothed them. Then He said, 'The man has now become like one of us, knowing good and evil. He must not be allowed to reach out his hand and take also from the tree of life and eat, and live forever.' So the LORD God banished them from the Garden of Eden to work the ground from which Adam had been taken.",
+      "asciiArt": "expulsion_scene",
+      "soundEffect": "garden_gates",
+      "next": "life_outside"
+    },
+    {
+      "id": "life_outside",
+      "text": "After being expelled from Eden, Adam and Eve began their new life outside the garden. Adam knew his wife Eve, and she became pregnant and gave birth to Cain. She said, 'With the help of the LORD I have brought forth a man.' Later she gave birth to his brother Abel.",
+      "next": "brothers_occupations"
+    },
+    {
+      "id": "brothers_occupations",
+      "text": "Now Abel kept flocks, and Cain worked the soil. In the course of time Cain brought some of the fruits of the soil as an offering to the LORD. And Abel also brought an offering—fat portions from some of the firstborn of his flock. The LORD looked with favor on Abel and his offering, but on Cain and his offering he did not look with favor.",
+      "next": "cain_anger"
+    },
+    {
+      "id": "cain_anger",
+      "text": "Cain was very angry, and his face was downcast. Then the LORD said to Cain, 'Why are you angry? Why is your face downcast? If you do what is right, will you not be accepted? But if you do not do what is right, sin is crouching at your door; it desires to have you, but you must rule over it.'",
+      "soundEffect": "divine_warning",
+      "next": "cain_decision"
+    },
+    {
+      "id": "cain_decision",
+      "text": "Cain is angry that God favored Abel's offering over his. What should he do?",
+      "choices": [
+        {
+          "text": "Attack and kill Abel out of jealousy",
+          "next": "cain_kills_abel",
+          "effect": { "violence": 20, "jealousy": 15, "brotherhood": -30 }
+        },
+        {
+          "text": "Listen to God's warning and master his anger",
+          "next": "cain_controls_anger",
+          "effect": { "self-control": 20, "obedience": 15 }
+        },
+        {
+          "text": "Try to understand why God favored Abel's offering",
+          "next": "cain_seeks_understanding",
+          "effect": { "wisdom": 15, "humility": 10 }
+        }
+      ]
+    },
+    {
+      "id": "cain_controls_anger",
+      "text": "This path represents what should have happened. If Cain had controlled his anger and mastered the sin crouching at his door, tragedy could have been avoided. But sadly, history followed a different course...",
+      "next": "cain_kills_abel"
+    },
+    {
+      "id": "cain_seeks_understanding",
+      "text": "This path represents what could have been. If Cain had sought to understand God's ways and offered an acceptable sacrifice with the right heart, peace might have prevailed. But sadly, history followed a different course...",
+      "next": "cain_kills_abel"
+    },
+    {
+      "id": "cain_kills_abel",
+      "text": "Cain said to his brother Abel, 'Let's go out to the field.' While they were in the field, Cain attacked his brother Abel and killed him. Then the LORD said to Cain, 'Where is your brother Abel?' 'I don't know,' he replied. 'Am I my brother's keeper?'",
+      "asciiArt": "cain_abel",
+      "next": "cain_punishment"
+    },
+    {
+      "id": "cain_punishment",
+      "text": "The LORD said, 'What have you done? Listen! Your brother's blood cries out to me from the ground. Now you are under a curse and driven from the ground, which opened its mouth to receive your brother's blood from your hand. When you work the ground, it will no longer yield its crops for you. You will be a restless wanderer on the earth.'",
+      "next": "cain_response"
+    },
+    {
+      "id": "cain_response",
+      "text": "Cain said to the LORD, 'My punishment is more than I can bear. Today you are driving me from the land, and I will be hidden from your presence; I will be a restless wanderer on the earth, and whoever finds me will kill me.'",
+      "next": "cain_marked"
+    },
+    {
+      "id": "cain_marked",
+      "text": "But the LORD said to him, 'Not so; anyone who kills Cain will suffer vengeance seven times over.' Then the LORD put a mark on Cain so that no one who found him would kill him. So Cain went out from the LORD's presence and lived in the land of Nod, east of Eden.",
+      "next": "adam_legacy"
+    },
+    {
+      "id": "adam_legacy",
+      "text": "Adam and Eve had another son named Seth. Eve said, 'God has granted me another child in place of Abel, since Cain killed him.' Seth also had a son, and he named him Enosh. At that time people began to call on the name of the LORD. Through Seth's lineage would eventually come Noah, Abraham, and ultimately, Jesus Christ.",
+      "next": "conclusion"
+    },
+    {
+      "id": "conclusion",
+      "text": "The story of Adam and Eve is foundational to understanding humanity's relationship with God. Through their choices, sin entered the world, but God's redemptive plan was already in motion. Their legacy continues through all humanity, carrying both the burden of sin and the hope of salvation.",
+      "asciiArt": "adam_legacy",
+      "next": "end"
+    }
+  ],
+  "teaching": {
+    "mainLesson": "Choices have consequences, and disobedience to God disrupts our relationship with Him, others, and creation.",
+    "secondaryLessons": [
+      "God creates each person with purpose and value in His image.",
+      "Though temptation presents sin as desirable, it always leads to negative consequences.",
+      "When we sin, we often try to hide, blame others, or rationalize rather than taking responsibility.",
+      "Even after sin, God provides for our needs and offers a path to redemption.",
+      "Mastering our emotions like anger and jealousy is critical to avoiding destructive actions."
+    ],
+    "bibleVerses": [
+      {
+        "reference": "Genesis 1:27",
+        "text": "So God created mankind in his own image, in the image of God he created them; male and female he created them."
+      },
+      {
+        "reference": "Genesis 2:16-17",
+        "text": "And the LORD God commanded the man, 'You are free to eat from any tree in the garden; but you must not eat from the tree of the knowledge of good and evil, for when you eat from it you will certainly die.'"
+      },
+      {
+        "reference": "Genesis 3:6",
+        "text": "When the woman saw that the fruit of the tree was good for food and pleasing to the eye, she took some and ate it. She also gave some to her husband, and he ate it."
+      },
+      {
+        "reference": "Genesis 3:19",
+        "text": "By the sweat of your brow you will eat your food until you return to the ground, since from it you were taken; for dust you are and to dust you will return."
+      },
+      {
+        "reference": "Genesis 4:7",
+        "text": "If you do what is right, will you not be accepted? But if you do not do what is right, sin is crouching at your door; it desires to have you, but you must rule over it."
+      }
+    ]
+  },
+  "asciiArtReferences": {
+    "creation_scene": "creation_scene.txt",
+    "eden_garden": "eden_garden.txt",
+    "eve_creation": "eve_creation.txt",
+    "serpent_temptation": "serpent_temptation.txt",
+    "eating_fruit": "eating_fruit.txt",
+    "judgment_scene": "judgment_scene.txt",
+    "expulsion_scene": "expulsion_scene.txt",
+    "cain_abel": "cain_abel.txt",
+    "adam_legacy": "adam_legacy.txt"
+  }
+}
